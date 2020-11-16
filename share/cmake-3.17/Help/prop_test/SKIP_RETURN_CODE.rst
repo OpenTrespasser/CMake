@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:44e4b3f7a5b07db1aff94b9780003e5c8f23522ba1c5f33480233b62c88aa31b
-size 454
+SKIP_RETURN_CODE
+----------------
+
+Return code to mark a test as skipped.
+
+Sometimes only a test itself can determine if all requirements for the
+test are met. If such a situation should not be considered a hard failure
+a return code of the process can be specified that will mark the test as
+``Not Run`` if it is encountered. Valid values are in the range of
+0 to 255, inclusive.
+
+See also the :prop_test:`SKIP_REGULAR_EXPRESSION` property.

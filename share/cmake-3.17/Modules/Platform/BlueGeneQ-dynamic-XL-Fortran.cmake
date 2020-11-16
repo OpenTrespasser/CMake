@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3b4fc77aa94bb338cf0655545a20e021c58eeeeccca18b15f6c4f03533ea02e2
-size 187
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+
+__BlueGeneQ_setup_dynamic(XL Fortran)

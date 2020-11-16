@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e6b9a87b13c9576e71e7fb4f105e1d0e85d16adc4104f224170c41d92c1ea156
-size 443
+RULE_LAUNCH_LINK
+----------------
+
+Specify a launcher for link rules.
+
+:ref:`Makefile Generators` and the :generator:`Ninja` generator prefix
+link and archive commands with the given launcher command line.
+This is intended to allow launchers to intercept build problems
+with high granularity.  Other generators ignore this property
+because their underlying build systems provide no hook to wrap
+individual commands with a launcher.

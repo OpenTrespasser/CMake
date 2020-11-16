@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:25da3f1775eb82e97ec19979e18d1e59eedbc3009e426436452afb8f42fb08de
-size 293
+TYPE
+----
+
+The type of the target.
+
+This read-only property can be used to test the type of the given
+target.  It will be one of ``STATIC_LIBRARY``, ``MODULE_LIBRARY``,
+``SHARED_LIBRARY``, ``OBJECT_LIBRARY``, ``INTERFACE_LIBRARY``, ``EXECUTABLE``
+or one of the internal target types.

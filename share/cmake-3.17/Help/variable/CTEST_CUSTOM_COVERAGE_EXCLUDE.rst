@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:28c5d53ecae65d806a5e24de07372232ec14a35286d68ad30a664f6ebbf091f1
-size 246
+CTEST_CUSTOM_COVERAGE_EXCLUDE
+-----------------------------
+
+A list of regular expressions which will be used to exclude files by their
+path from coverage output by the :command:`ctest_coverage` command.
+
+.. include:: CTEST_CUSTOM_XXX.txt

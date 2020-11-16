@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2b98678bb5a40b580169d7b8ed4ac799c30c452c2b5dd84aea24b1d0e7ac7f48
-size 581
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+
+# support for AT&T syntax assemblers, e.g. GNU as
+
+set(ASM_DIALECT "-ATT")
+# *.S files are supposed to be preprocessed, so they should not be passed to
+# assembler but should be processed by gcc
+set(CMAKE_ASM${ASM_DIALECT}_SOURCE_FILE_EXTENSIONS s;asm)
+
+set(CMAKE_ASM${ASM_DIALECT}_COMPILE_OBJECT "<CMAKE_ASM${ASM_DIALECT}_COMPILER> <INCLUDES> <FLAGS> -o <OBJECT> <SOURCE>")
+
+include(CMakeASMInformation)
+set(ASM_DIALECT)

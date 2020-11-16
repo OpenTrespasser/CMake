@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:911ca508802309e28bc90afc063014430b68ed32066e36827d6476df8d17cede
-size 267
+
+set(_compiler_id_pp_test "defined(__BORLANDC__)")
+
+set(_compiler_id_version_compute "
+  /* __BORLANDC__ = 0xVRR */
+# define @PREFIX@COMPILER_VERSION_MAJOR @MACRO_HEX@(__BORLANDC__>>8)
+# define @PREFIX@COMPILER_VERSION_MINOR @MACRO_HEX@(__BORLANDC__ & 0xFF)")

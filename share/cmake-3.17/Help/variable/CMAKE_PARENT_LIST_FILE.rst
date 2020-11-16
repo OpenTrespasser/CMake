@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5dde4e7e983fece3db89e949e9b76bb518ec32f66d9abd4a852986c5df9445d8
-size 402
+CMAKE_PARENT_LIST_FILE
+----------------------
+
+Full path to the CMake file that included the current one.
+
+While processing a CMake file loaded by :command:`include` or
+:command:`find_package` this variable contains the full path to the file
+including it.  The top of the include stack is always the ``CMakeLists.txt``
+for the current directory.  See also :variable:`CMAKE_CURRENT_LIST_FILE`.

@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:68112d59c0822fd302dc8a93218459963c19d7c2d1648a38045c2d74ed5a4999
-size 730
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+
+# This module is shared by multiple languages; use include blocker.
+if(__COMPILER_PATHSCALE)
+  return()
+endif()
+set(__COMPILER_PATHSCALE 1)
+
+macro(__compiler_pathscale lang)
+  # Feature flags.
+  set(CMAKE_${lang}_VERBOSE_FLAG "-v")
+
+  # Initial configuration flags.
+  string(APPEND CMAKE_${lang}_FLAGS_INIT " ")
+  string(APPEND CMAKE_${lang}_FLAGS_DEBUG_INIT " -g -O0")
+  string(APPEND CMAKE_${lang}_FLAGS_MINSIZEREL_INIT " -Os")
+  string(APPEND CMAKE_${lang}_FLAGS_RELEASE_INIT " -O3")
+  string(APPEND CMAKE_${lang}_FLAGS_RELWITHDEBINFO_INIT " -g -O2")
+endmacro()

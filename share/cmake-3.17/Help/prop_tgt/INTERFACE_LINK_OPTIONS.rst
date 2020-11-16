@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aac4eac129ff95621616933fc88acc5b4c74416efce44eb227d6e7f57e5f3cfa
-size 399
+INTERFACE_LINK_OPTIONS
+----------------------
+
+.. |property_name| replace:: link options
+.. |command_name| replace:: :command:`target_link_options`
+.. |PROPERTY_INTERFACE_NAME| replace:: ``INTERFACE_LINK_OPTIONS``
+.. |PROPERTY_LINK| replace:: :prop_tgt:`LINK_OPTIONS`
+.. |PROPERTY_GENEX| replace:: ``$<TARGET_PROPERTY:foo,INTERFACE_LINK_OPTIONS>``
+.. include:: INTERFACE_BUILD_PROPERTY.txt

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ae38dcecd049bd6bf19e3524efe8ba73409f5cc63ed090dd6fece6bfd5db0dce
-size 285
+CMAKE_CROSS_CONFIGS
+-------------------
+
+Specifies a :ref:`semicolon-separated list <CMake Language Lists>` of
+configurations available from all ``build-<Config>.ninja`` files in the
+:generator:`Ninja Multi-Config` generator. See the generator's
+documentation for more details.

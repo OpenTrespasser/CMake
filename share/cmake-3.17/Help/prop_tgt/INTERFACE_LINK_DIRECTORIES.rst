@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d0fb33d93811faa06fc73357d91e7723134b497fa64eead8f0d91d5fed9b0414
-size 427
+INTERFACE_LINK_DIRECTORIES
+--------------------------
+
+.. |property_name| replace:: link directories
+.. |command_name| replace:: :command:`target_link_directories`
+.. |PROPERTY_INTERFACE_NAME| replace:: ``INTERFACE_LINK_DIRECTORIES``
+.. |PROPERTY_LINK| replace:: :prop_tgt:`LINK_DIRECTORIES`
+.. |PROPERTY_GENEX| replace:: ``$<TARGET_PROPERTY:foo,INTERFACE_LINK_DIRECTORIES>``
+.. include:: INTERFACE_BUILD_PROPERTY.txt

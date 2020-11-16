@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c0b034627f0f80bd2184a0af914e42254a6d53105474014b5b341c5ffb9d596c
-size 353
+
+set(_compiler_id_pp_test "defined(__DECC)")
+
+set(_compiler_id_version_compute "
+  /* __DECC_VER = VVRRTPPPP */
+# define @PREFIX@COMPILER_VERSION_MAJOR @MACRO_DEC@(__DECC_VER/10000000)
+# define @PREFIX@COMPILER_VERSION_MINOR @MACRO_DEC@(__DECC_VER/100000  % 100)
+# define @PREFIX@COMPILER_VERSION_PATCH @MACRO_DEC@(__DECC_VER         % 10000)")

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ebc49bcedfab0fe854e8261c9eb43329944162dd094b4b1380cb912b305b907c
-size 305
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+
+__BlueGeneQ_setup_static(XL C)
+
+# -qhalt=e       = Halt on error messages (rather than just severe errors)
+string(APPEND CMAKE_C_FLAGS_INIT " -qhalt=e")

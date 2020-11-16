@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:20c049746b4cb4223f1ac73c6c4fd4d1f6728d0812bf53ae0da44781aa78c68e
-size 432
+DEFINITIONS
+-----------
+
+For CMake 2.4 compatibility only.  Use :prop_dir:`COMPILE_DEFINITIONS`
+instead.
+
+This read-only property specifies the list of flags given so far to
+the :command:`add_definitions` command.  It is intended for debugging
+purposes.  Use the :prop_dir:`COMPILE_DEFINITIONS` directory property
+instead.
+
+This built-in read-only property does not exist if policy
+:policy:`CMP0059` is set to ``NEW``.

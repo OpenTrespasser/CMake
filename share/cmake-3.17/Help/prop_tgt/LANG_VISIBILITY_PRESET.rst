@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5814c0f366798ff537330b2783ceee1048b0b0e20d6f8dadf96277d9ce2b2b7f
-size 508
+<LANG>_VISIBILITY_PRESET
+------------------------
+
+Value for symbol visibility compile flags
+
+The ``<LANG>_VISIBILITY_PRESET`` property determines the value passed in a
+visibility related compile option, such as ``-fvisibility=`` for ``<LANG>``.
+This property affects compilation in sources of all types of targets
+(subject to policy :policy:`CMP0063`).
+
+This property is initialized by the value of the
+:variable:`CMAKE_<LANG>_VISIBILITY_PRESET` variable if it is set when a
+target is created.

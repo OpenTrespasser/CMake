@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4f6d5e5eec1ae80ecabb0e2d398f4cbbfa07d54b0d44fd1280d2bf1c2d52c6e5
-size 252
+include(Platform/Darwin-Initialize)
+
+if(NOT _CMAKE_OSX_SYSROOT_PATH MATCHES "/iPhone(OS|Simulator)")
+  message(FATAL_ERROR "${CMAKE_OSX_SYSROOT} is not an iOS SDK")
+endif()
+
+set(IOS 1)
+
+set(_CMAKE_FEATURE_DETECTION_TARGET_TYPE STATIC_LIBRARY)

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:af6ba56689a08f6b7d1347e896c0dd95c0ebe934dadbaa9325bc367b17d350b3
-size 275
+BUNDLE_EXTENSION
+----------------
+
+The file extension used to name a :prop_tgt:`BUNDLE`, a :prop_tgt:`FRAMEWORK`,
+or a :prop_tgt:`MACOSX_BUNDLE` target on the macOS and iOS.
+
+The default value is ``bundle``, ``framework``, or ``app`` for the respective
+target types.

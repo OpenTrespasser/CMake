@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:524a9ac45197d689ee133f156916657349acc8685d560afbe887c48b25253207
-size 1317
+include(Compiler/XL)
+__compiler_xl(CXX)
+string(APPEND CMAKE_CXX_FLAGS_RELEASE_INIT " -DNDEBUG")
+string(APPEND CMAKE_CXX_FLAGS_MINSIZEREL_INIT " -DNDEBUG")
+
+# -qthreaded = Ensures that all optimizations will be thread-safe
+string(APPEND CMAKE_CXX_FLAGS_INIT " -qthreaded")
+
+if (CMAKE_CXX_COMPILER_VERSION VERSION_GREATER_EQUAL 10.1)
+  if(CMAKE_SYSTEM MATCHES "Linux")
+    set(CMAKE_CXX98_STANDARD_COMPILE_OPTION "")
+    set(CMAKE_CXX98_EXTENSION_COMPILE_OPTION "")
+  else()
+    set(CMAKE_CXX98_STANDARD_COMPILE_OPTION "-qlanglvl=strict98")
+    set(CMAKE_CXX98_EXTENSION_COMPILE_OPTION "-qlanglvl=extended")
+  endif()
+  set(CMAKE_CXX11_STANDARD_COMPILE_OPTION "-qlanglvl=extended0x")
+  set(CMAKE_CXX11_EXTENSION_COMPILE_OPTION "-qlanglvl=extended0x")
+  set(CMAKE_CXX98_STANDARD__HAS_FULL_SUPPORT ON)
+  set(CMAKE_CXX11_STANDARD__HAS_FULL_SUPPORT ON)
+  if (CMAKE_CXX_COMPILER_VERSION VERSION_GREATER_EQUAL 16.1.0)
+    set(CMAKE_CXX14_STANDARD_COMPILE_OPTION "-qlanglvl=extended1y")
+    set(CMAKE_CXX14_EXTENSION_COMPILE_OPTION "-qlanglvl=extended1y")
+    set(CMAKE_CXX14_STANDARD__HAS_FULL_SUPPORT ON)
+  endif()
+endif ()
+
+__compiler_check_default_language_standard(CXX 10.1 98)
+
+set(CMAKE_CXX_COMPILE_OBJECT
+  "<CMAKE_CXX_COMPILER> -+ <DEFINES> <INCLUDES> <FLAGS> -o <OBJECT> -c <SOURCE>")

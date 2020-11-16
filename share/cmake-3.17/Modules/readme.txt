@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2e368c18b439015baaa817299e116ca4c2366e72f6d067128cfc1ba561d21b17
-size 235
+See the "Find Modules" section of the cmake-developer(7) manual page.
+
+For more information about how to contribute modules to CMake, see this page:
+https://gitlab.kitware.com/cmake/community/wikis/doc/cmake/dev/Module-Maintainers

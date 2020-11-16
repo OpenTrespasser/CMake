@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0c779872f96cd76eec5a51b83b96440e8953ba7eefee8283168e6cbd25f20141
-size 305
+GLOBAL_DEPENDS_DEBUG_MODE
+-------------------------
+
+Enable global target dependency graph debug mode.
+
+CMake automatically analyzes the global inter-target dependency graph
+at the beginning of native build system generation.  This property
+causes it to display details of its analysis to stderr.

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e4a5ed60590496075dca919939bde6d2d4e07eed32ae4285eeeec15be600c774
-size 240
+include(Platform/Darwin-Initialize)
+
+if(NOT _CMAKE_OSX_SYSROOT_PATH MATCHES "/AppleTV(OS|Simulator)")
+  message(FATAL_ERROR "${CMAKE_OSX_SYSROOT} is not an tvOS SDK")
+endif()
+
+set(_CMAKE_FEATURE_DETECTION_TARGET_TYPE STATIC_LIBRARY)

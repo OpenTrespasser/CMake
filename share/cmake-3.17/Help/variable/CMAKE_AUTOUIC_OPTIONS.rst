@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eb2e50e0482d02d8262a22f5eb4aaef1cc6cb3956551dbda89da18fee0104db7
-size 395
+CMAKE_AUTOUIC_OPTIONS
+---------------------
+
+Additional options for ``uic`` when using :variable:`CMAKE_AUTOUIC`.
+
+This variable is used to initialize the :prop_tgt:`AUTOUIC_OPTIONS` property on
+all the targets.  See that target property for additional information.
+
+EXAMPLE
+^^^^^^^
+
+.. code-block:: cmake
+
+  # ...
+  set_property(CMAKE_AUTOUIC_OPTIONS "--no-protection")
+  # ...

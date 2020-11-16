@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:de25de48e82d4a576f113c6041a2afd4504c69237c384abc0ce9313c4d0ce4f3
-size 468
+CMAKE_XCODE_SCHEME_MAIN_THREAD_CHECKER_STOP
+-------------------------------------------
+
+Whether to enable the ``Main Thread Checker`` option
+``Pause on issues``
+in the Diagnostics section of the generated Xcode scheme.
+
+This variable initializes the
+:prop_tgt:`XCODE_SCHEME_MAIN_THREAD_CHECKER_STOP`
+property on all targets.
+
+Please refer to the :prop_tgt:`XCODE_GENERATE_SCHEME` target property
+documentation to see all Xcode schema related properties.

@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:63442ce2fc872c384a8234fd34660195e0e8543318ebd905cae6fe13650e3f12
-size 288
+#include <pthread.h>
+
+void* start_routine(void* args)
+{
+  return args;
+}
+
+int main(void)
+{
+  /* This is a compile and link test, no code to actually run things. */
+  pthread_t thread;
+  pthread_create(&thread, 0, start_routine, 0);
+  pthread_join(thread, 0);
+  return 0;
+}

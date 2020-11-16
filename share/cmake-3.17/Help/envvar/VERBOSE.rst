@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1e0e24362f21a72c3b5a7108b42714a7d86c33d823833b6b8bbc60c783dd7662
-size 316
+VERBOSE
+-------
+
+Activates verbose output from CMake and your build tools of choice when
+you start to actually build your project.
+
+Note that any given value is ignored. It's just checked for existence.
+
+See also :ref:`Build Tool Mode <Build Tool Mode>` and
+:envvar:`CMAKE_NO_VERBOSE` environment variable

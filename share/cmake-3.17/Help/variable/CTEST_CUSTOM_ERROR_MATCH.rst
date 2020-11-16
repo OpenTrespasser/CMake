@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b01fcfa3c06104dcee40f3597efaa0438bf925efbf7c3cc70cd65b025133e764
-size 222
+CTEST_CUSTOM_ERROR_MATCH
+------------------------
+
+A list of regular expressions which will be used to detect error messages in
+build outputs by the :command:`ctest_test` command.
+
+.. include:: CTEST_CUSTOM_XXX.txt

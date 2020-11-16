@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:71a8ef87c0d4ec611d4f011de0a4b9a88fbba22a7ce55a0909d86866dd44bdc9
-size 547
+DEBUG_CONFIGURATIONS
+--------------------
+
+Specify which configurations are for debugging.
+
+The value must be a semi-colon separated list of configuration names.
+Currently this property is used only by the :command:`target_link_libraries`
+command.  Additional uses may be defined in the future.
+
+This property must be set at the top level of the project and before
+the first :command:`target_link_libraries` command invocation.  If any entry in
+the list does not match a valid configuration for the project the
+behavior is undefined.

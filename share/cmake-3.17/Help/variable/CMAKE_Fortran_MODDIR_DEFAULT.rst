@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7ab9566cdefd81eb1218750c96815c99142fb86928aef72bbcd960015c56b539
-size 315
+CMAKE_Fortran_MODDIR_DEFAULT
+----------------------------
+
+Fortran default module output directory.
+
+Most Fortran compilers write ``.mod`` files to the current working
+directory.  For those that do not, this is set to ``.`` and used when
+the :prop_tgt:`Fortran_MODULE_DIRECTORY` target property is not set.

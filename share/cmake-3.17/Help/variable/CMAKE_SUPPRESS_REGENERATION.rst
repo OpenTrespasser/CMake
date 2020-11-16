@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:878e5dd1ffc9f162605720af994d2a9b59a904330a1a48ecbb258365c7a5ce07
-size 525
+CMAKE_SUPPRESS_REGENERATION
+---------------------------
+
+If ``CMAKE_SUPPRESS_REGENERATION`` is ``OFF``, which is default, then CMake
+adds a special target on which all other targets depend that checks the build
+system and optionally re-runs CMake to regenerate the build system when
+the target specification source changes.
+
+If this variable evaluates to ``ON`` at the end of the top-level
+``CMakeLists.txt`` file, CMake will not add the regeneration target to the
+build system or perform any build system checks.

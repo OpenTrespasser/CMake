@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bd74b5f86fed4bc0de6b303356dd7bc0efe76abfc444aab3703c472303a464d7
-size 283
+CMAKE_IMPORT_LIBRARY_SUFFIX
+---------------------------
+
+The suffix for import libraries that you link to.
+
+The suffix to use for the end of an import library filename if used on
+this platform.
+
+``CMAKE_IMPORT_LIBRARY_SUFFIX_<LANG>`` overrides this for language ``<LANG>``.

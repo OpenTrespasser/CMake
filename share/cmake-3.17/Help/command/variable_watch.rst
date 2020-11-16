@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7d5b53a301e984266a73bd3daf6b8e4b1c7ea8d0bf83ba147439c1c11d7f6414
-size 436
+variable_watch
+--------------
+
+Watch the CMake variable for change.
+
+.. code-block:: cmake
+
+  variable_watch(<variable> [<command>])
+
+If the specified ``<variable>`` changes, a message will be printed
+to inform about the change.
+
+Additionally, if ``<command>`` is given, this command will be executed.
+The command will receive the following arguments:
+``COMMAND(<variable> <access> <value> <current_list_file> <stack>)``

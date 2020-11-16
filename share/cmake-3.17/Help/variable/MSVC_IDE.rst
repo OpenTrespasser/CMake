@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:78a73aaede6f3dbebc5248a2a0cba1a392dd606340c6b5b3b08719ffc9c2afa7
-size 192
+MSVC_IDE
+--------
+
+``True`` when using the Microsoft Visual C++ IDE.
+
+Set to ``true`` when the target platform is the Microsoft Visual C++ IDE, as
+opposed to the command line compiler.

@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2d968d4148c7f8985a3c6d7f8a3d6060e5a76942052e0dd39a590df91d79ed0e
-size 608
+CMAKE_AUTOMOC_RELAXED_MODE
+--------------------------
+
+.. deprecated:: 3.15
+
+Switch between strict and relaxed automoc mode.
+
+By default, :prop_tgt:`AUTOMOC` behaves exactly as described in the
+documentation of the :prop_tgt:`AUTOMOC` target property.  When set to
+``TRUE``, it accepts more input and tries to find the correct input file for
+``moc`` even if it differs from the documented behaviour.  In this mode it
+e.g.  also checks whether a header file is intended to be processed by moc
+when a ``"foo.moc"`` file has been included.
+
+Relaxed mode has to be enabled for KDE4 compatibility.

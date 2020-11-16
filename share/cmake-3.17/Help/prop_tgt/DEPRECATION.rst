@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8cc60c45b05ad4bf16dc2ed4737589eb851a78d4bb03d168cc311b9dad433f62
-size 198
+DEPRECATION
+-----------
+
+Deprecation message from imported target's developer.
+
+``DEPRECATION`` is the message regarding a deprecation status to be displayed
+to downstream users of a target.

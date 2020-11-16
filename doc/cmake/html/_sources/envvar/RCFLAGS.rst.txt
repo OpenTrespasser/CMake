@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:16d47ea69248b6218137c2f21a6f84ae2a772270d31da4d3a85117aacf588cf8
-size 501
+RCFLAGS
+-------
+
+.. include:: ENV_VAR.txt
+
+Default compilation flags to be used when compiling ``resource`` files. Will
+only be used by CMake on the first configuration to determine ``resource``
+default compilation flags, after which the value for ``RCFLAGS`` is stored in
+the cache as :variable:`CMAKE_RC_FLAGS <CMAKE_<LANG>_FLAGS>`. For any
+configuration run (including the first), the environment variable will be ignored
+if the :variable:`CMAKE_RC_FLAGS <CMAKE_<LANG>_FLAGS>` variable is defined.

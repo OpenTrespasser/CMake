@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f9f58bc12da500c5db5bfb6b77bdda1e94217eedfd65a608d9fe61f2f8548f91
-size 540
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+
+# This file is used by EnableLanguage in cmGlobalGenerator to
+# determine that the selected ASM-ATT "compiler" works.
+# For assembler this can only check whether the compiler has been found,
+# because otherwise there would have to be a separate assembler source file
+# for each assembler on every architecture.
+
+set(ASM_DIALECT "-ATT")
+include(CMakeTestASMCompiler)
+set(ASM_DIALECT)

@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:920bcc8cd721101cdbc357de6a1d3fbf67d3bebbace3abab3a2ba03bdff1b827
-size 151
+# kFreeBSD looks just like Linux.
+include(Platform/Linux)
+
+set(CMAKE_LIBRARY_ARCHITECTURE_REGEX "[a-z0-9_]+(-[a-z0-9_]+)?-kfreebsd-gnu[a-z0-9_]*")

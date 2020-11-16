@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7e9dbb6ceb224a56b0aedce5472df9029fa693114313d48abcb5ecd43288cc6c
-size 192
+set(CMAKE_SHARED_LIBRARY_C_FLAGS "-G 0")
+set(CMAKE_SHARED_LIBRARY_SUFFIX "..o")
+set(CMAKE_DL_LIBS "")
+set(CMAKE_SHARED_LIBRARY_LINK_C_FLAGS "-Wl,-D,08000000")
+include(Platform/UnixPaths)

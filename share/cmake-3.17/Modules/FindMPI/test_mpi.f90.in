@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b5ede76135e9b1b240a05e81df2dcc43a1a7a4ef97f0f458d565dbd4c2105d01
-size 184
+      program hello
+      @MPI_Fortran_INCLUDE_LINE@
+      integer@MPI_Fortran_INTEGER_LINE@ ierror
+      call MPI_INIT(ierror)
+      call MPI_FINALIZE(ierror)
+      end program

@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b2871fba57862a977f58c2b4ddda6e55a54a94cf29bdd5c335d5ac989b9aa96f
-size 1016
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+
+if(CMAKE_BINARY_DIR)
+  message(FATAL_ERROR "CPackZIP.cmake may only be used by CPack internally.")
+endif()
+
+find_program(ZIP_EXECUTABLE wzzip PATHS "$ENV{ProgramFiles}/WinZip")
+if(ZIP_EXECUTABLE)
+  set(CPACK_ZIP_COMMAND "\"${ZIP_EXECUTABLE}\" -P \"<ARCHIVE>\" @<FILELIST>")
+  set(CPACK_ZIP_NEED_QUOTES TRUE)
+endif()
+
+if(NOT ZIP_EXECUTABLE)
+  find_program(ZIP_EXECUTABLE 7z PATHS "$ENV{ProgramFiles}/7-Zip")
+  if(ZIP_EXECUTABLE)
+    set(CPACK_ZIP_COMMAND "\"${ZIP_EXECUTABLE}\" a -tzip \"<ARCHIVE>\" @<FILELIST>")
+  set(CPACK_ZIP_NEED_QUOTES TRUE)
+  endif()
+endif()
+
+if(NOT ZIP_EXECUTABLE)
+  find_package(Cygwin)
+  find_program(ZIP_EXECUTABLE zip PATHS "${CYGWIN_INSTALL_PATH}/bin")
+  if(ZIP_EXECUTABLE)
+    set(CPACK_ZIP_COMMAND "\"${ZIP_EXECUTABLE}\" -r \"<ARCHIVE>\" . -i@<FILELIST>")
+    set(CPACK_ZIP_NEED_QUOTES FALSE)
+  endif()
+endif()

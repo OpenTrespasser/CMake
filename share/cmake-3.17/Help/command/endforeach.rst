@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c8443609d8bff394be534af281ff7eeb7ffa99b750501b3b4bb9182cfdcf5577
-size 356
+endforeach
+----------
+
+Ends a list of commands in a foreach block.
+
+.. code-block:: cmake
+
+  endforeach([<loop_var>])
+
+See the :command:`foreach` command.
+
+The optional ``<loop_var>`` argument is supported for backward compatibility
+only. If used it must be a verbatim repeat of the ``<loop_var>`` argument of
+the opening ``foreach`` clause.

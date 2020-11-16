@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7a16e592a4a26e2749fb57259040d4ec058a511ec9dfd95d1b3d3169a4d660e5
-size 414
+CMAKE_<LANG>_ARCHIVE_APPEND
+---------------------------
+
+Rule variable to append to a static archive.
+
+This is a rule variable that tells CMake how to append to a static
+archive.  It is used in place of :variable:`CMAKE_<LANG>_CREATE_STATIC_LIBRARY`
+on some platforms in order to support large object counts.  See also
+:variable:`CMAKE_<LANG>_ARCHIVE_CREATE` and
+:variable:`CMAKE_<LANG>_ARCHIVE_FINISH`.

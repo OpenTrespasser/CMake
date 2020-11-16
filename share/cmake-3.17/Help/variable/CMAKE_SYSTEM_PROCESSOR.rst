@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7aa4b0c2fd5569b8cac7682acef02c0b14df366994bd9f7f9e7877becb367ef9
-size 252
+CMAKE_SYSTEM_PROCESSOR
+----------------------
+
+The name of the CPU CMake is building for.
+
+This variable is the same as :variable:`CMAKE_HOST_SYSTEM_PROCESSOR` if
+you build for the host system instead of the target system when
+cross compiling.

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:57d69fc3cf9026cb0a40ea2ff1136b898350fd65acf5dab4ec139009bf6f4e0f
-size 326
+set(CMAKE_C_COMPILE_OPTIONS_PIC -K PIC)
+set(CMAKE_C_COMPILE_OPTIONS_PIE "")
+set(_CMAKE_C_PIE_MAY_BE_SUPPORTED_BY_LINKER NO)
+set(CMAKE_C_LINK_OPTIONS_PIE "")
+set(CMAKE_C_LINK_OPTIONS_NO_PIE "")
+set(CMAKE_SHARED_LIBRARY_C_FLAGS "-K PIC")
+set(CMAKE_SHARED_LIBRARY_LINK_C_FLAGS "-Wl,-Bexport")
+include(Platform/UnixPaths)

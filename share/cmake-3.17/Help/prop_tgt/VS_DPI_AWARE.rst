@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fc9385d161a2cc4de1a4a049f570538f35f395d1ca01793680f54be87510f7d6
-size 350
+VS_DPI_AWARE
+------------
+
+Set the Manifest Tool -> Input and Output -> DPI Awareness in the Visual Studio
+target project properties.
+
+Valid values are ``PerMonitor``, ``ON``, or ``OFF``.
+
+For example:
+
+.. code-block:: cmake
+
+  add_executable(myproject myproject.cpp)
+  set_property(TARGET myproject PROPERTY VS_DPI_AWARE "PerMonitor")

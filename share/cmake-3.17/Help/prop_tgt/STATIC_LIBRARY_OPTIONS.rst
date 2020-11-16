@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:25d4e3b697e3b2d183009426b3f9fda3b31e9dc546f1b7883c9e9faf69ccb1ac
-size 843
+STATIC_LIBRARY_OPTIONS
+----------------------
+
+Archiver (or MSVC librarian) flags for a static library target.
+Targets that are shared libraries, modules, or executables need to use
+the :prop_tgt:`LINK_OPTIONS` target property.
+
+This property holds a :ref:`semicolon-separated list <CMake Language Lists>` of options
+specified so far for its target.  Use :command:`set_target_properties` or
+:command:`set_property` commands to set its content.
+
+Contents of ``STATIC_LIBRARY_OPTIONS`` may use "generator expressions" with the
+syntax ``$<...>``.  See the :manual:`cmake-generator-expressions(7)` manual
+for available expressions.  See the :manual:`cmake-buildsystem(7)` manual
+for more on defining buildsystem properties.
+
+.. note::
+
+  This property must be used in preference to :prop_tgt:`STATIC_LIBRARY_FLAGS`
+  property.

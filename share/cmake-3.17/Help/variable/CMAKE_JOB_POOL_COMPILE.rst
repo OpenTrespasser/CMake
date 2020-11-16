@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7413e8524ff4e54b66a82ae8408fbcef0f8e3f7650c131696c18173256be6dea
-size 212
+CMAKE_JOB_POOL_COMPILE
+----------------------
+
+This variable is used to initialize the :prop_tgt:`JOB_POOL_COMPILE`
+property on all the targets. See :prop_tgt:`JOB_POOL_COMPILE`
+for additional information.

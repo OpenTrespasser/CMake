@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:df78f9b8478f68b68a1e9d99d6c29c3ead42532319e6cc06415328afe2ae39dc
-size 321
+CMAKE_LIBRARY_OUTPUT_DIRECTORY
+------------------------------
+
+Where to put all the :ref:`LIBRARY <Library Output Artifacts>`
+target files when built.
+
+This variable is used to initialize the :prop_tgt:`LIBRARY_OUTPUT_DIRECTORY`
+property on all the targets.  See that target property for additional
+information.

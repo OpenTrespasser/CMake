@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6df9b3f64d6015175753361888efacc99ae11da7f618a7e9448cbcfb8ad52cef
-size 717
+<PackageName>_ROOT
+------------------
+
+.. include:: ENV_VAR.txt
+
+Calls to :command:`find_package(<PackageName>)` will search in prefixes
+specified by the ``<PackageName>_ROOT`` environment variable, where
+``<PackageName>`` is the name given to the :command:`find_package` call
+and ``_ROOT`` is literal.  For example, ``find_package(Foo)`` will search
+prefixes specified in the ``Foo_ROOT`` environment variable (if set).
+See policy :policy:`CMP0074`.
+
+This variable may hold a single prefix or a list of prefixes separated
+by ``:`` on UNIX or ``;`` on Windows (the same as the ``PATH`` environment
+variable convention on those platforms).
+
+See also the :variable:`<PackageName>_ROOT` CMake variable.

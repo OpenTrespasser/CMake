@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:83a37e7aed3add2a9ed120900db5079f5b94c39245e02843ac10252e45eaa6cc
-size 476
+CMAKE_<LANG>_FLAGS_INIT
+-----------------------
+
+Value used to initialize the :variable:`CMAKE_<LANG>_FLAGS` cache entry
+the first time a build tree is configured for language ``<LANG>``.
+This variable is meant to be set by a :variable:`toolchain file
+<CMAKE_TOOLCHAIN_FILE>`.  CMake may prepend or append content to
+the value based on the environment and target platform.
+
+See also the configuration-specific
+:variable:`CMAKE_<LANG>_FLAGS_<CONFIG>_INIT` variable.

@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4e123134c36f83b312154e8ca5ef7afa43c75311a22266f7fc3457a69866b127
-size 628
+<LANG>_COMPILER_LAUNCHER
+------------------------
+
+This property is implemented only when ``<LANG>`` is ``C``, ``CXX``,
+``Fortran``, ``OBJC``, ``OBJCXX``, or ``CUDA``.
+
+Specify a :ref:`semicolon-separated list <CMake Language Lists>` containing a command line
+for a compiler launching tool. The :ref:`Makefile Generators` and the
+:generator:`Ninja` generator will run this tool and pass the compiler and
+its arguments to the tool. Some example tools are distcc and ccache.
+
+This property is initialized by the value of
+the :variable:`CMAKE_<LANG>_COMPILER_LAUNCHER` variable if it is set
+when a target is created.

@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ff03cecec4e32ac494a371d8506e74003395bbf3e32ad8fb7786fd0165ff31f7
-size 200
+CMAKE_CURRENT_FUNCTION_LIST_FILE
+--------------------------------
+
+When executing code inside a :command:`function`, this variable
+contains the full path to the listfile declaring a current function.

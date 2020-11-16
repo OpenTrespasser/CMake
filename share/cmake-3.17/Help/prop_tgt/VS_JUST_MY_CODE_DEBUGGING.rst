@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7f6b894c428617197bd6b3562447077f171d8fb820033be539bb9b22896186b1
-size 377
+VS_JUST_MY_CODE_DEBUGGING
+-------------------------
+
+Enable Just My Code with Visual Studio debugger.
+
+Supported on :ref:`Visual Studio Generators` for VS 2010 and higher,
+:ref:`Makefile Generators` and the :generator:`Ninja` generators.
+
+This property is initialized by the :variable:`CMAKE_VS_JUST_MY_CODE_DEBUGGING`
+variable if it is set when a target is created.

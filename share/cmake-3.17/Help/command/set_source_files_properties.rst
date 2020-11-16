@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8bf01c8e739b9e2eb9056e3b2b22ffc17a98e20b8b643e6ff793f58d816a95ec
-size 635
+set_source_files_properties
+---------------------------
+
+Source files can have properties that affect how they are built.
+
+.. code-block:: cmake
+
+  set_source_files_properties([file1 [file2 [...]]]
+                              PROPERTIES prop1 value1
+                              [prop2 value2 [...]])
+
+Sets properties associated with source files using a key/value paired
+list.
+
+See also the :command:`set_property(SOURCE)` command.
+
+See :ref:`Source File Properties` for the list of properties known
+to CMake.  Source file properties are visible only to targets added
+in the same directory (``CMakeLists.txt``).

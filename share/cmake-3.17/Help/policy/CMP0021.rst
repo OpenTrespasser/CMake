@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b20a84437c66ca415196fe88e1f29050871bddf5b0846c69f91c3d8dc2221c57
-size 903
+CMP0021
+-------
+
+Fatal error on relative paths in :prop_tgt:`INCLUDE_DIRECTORIES` target
+property.
+
+CMake 2.8.10.2 and lower allowed the :prop_tgt:`INCLUDE_DIRECTORIES` target
+property to contain relative paths.  The base path for such relative
+entries is not well defined.  CMake 2.8.12 issues a ``FATAL_ERROR`` if the
+:prop_tgt:`INCLUDE_DIRECTORIES` property contains a relative path.
+
+The ``OLD`` behavior for this policy is not to warn about relative paths
+in the ``INCLUDE_DIRECTORIES`` target property.  The ``NEW`` behavior for this
+policy is to issue a ``FATAL_ERROR`` if ``INCLUDE_DIRECTORIES`` contains a
+relative path.
+
+This policy was introduced in CMake version 2.8.12.  CMake version
+|release| warns when the policy is not set and uses ``OLD`` behavior.  Use
+the :command:`cmake_policy` command to set it to ``OLD`` or ``NEW`` explicitly.
+
+.. include:: DEPRECATED.txt

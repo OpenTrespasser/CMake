@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7512c5460ea21f2ad6a59d29854ad1863c5b3caf0528a9768cb5694af4d9190a
-size 136
+include(Platform/Apple-GNU)
+__apple_compiler_gnu(CXX)
+cmake_gnu_set_sysroot_flag(CXX)
+cmake_gnu_set_osx_deployment_target_flag(CXX)

@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:32b08fb0d469e4f36c8d0838e38a56d5eb67b9ec292011309828ac0e54175cbc
-size 966
+CMAKE_CUDA_RUNTIME_LIBRARY
+--------------------------
+
+Select the CUDA runtime library for use by compilers targeting the MSVC ABI.
+This variable is used to initialize the :prop_tgt:`CUDA_RUNTIME_LIBRARY`
+property on all targets as they are created.
+
+The allowed case insensitive values are:
+
+.. include:: ../prop_tgt/CUDA_RUNTIME_LIBRARY-VALUES.txt
+
+Contents of ``CMAKE_CUDA_RUNTIME_LIBRARY`` may use
+:manual:`generator expressions <cmake-generator-expressions(7)>`.
+
+If this variable is not set then the :prop_tgt:`CUDA_RUNTIME_LIBRARY` target
+property will not be set automatically.  If that property is not set then
+CMake uses the default value ``Static`` to select the CUDA runtime library.
+
+.. note::
+
+  This property has effect only when the ``CUDA`` language is enabled. To
+  control the CUDA runtime linking when only using the CUDA SDK with the
+  ``C`` or ``C++`` language we recommend using the :module:`FindCUDAToolkit`
+  module.

@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cd4d003db93a0a2464a3398373f5da6b5997baca843a377205a37ecde0ec315a
-size 605
+LINKER_LANGUAGE
+---------------
+
+Specifies language whose compiler will invoke the linker.
+
+For executables, shared libraries, and modules, this sets the language
+whose compiler is used to link the target (such as "C" or "CXX").  A
+typical value for an executable is the language of the source file
+providing the program entry point (main).  If not set, the language
+with the highest linker preference value is the default.  See
+documentation of :variable:`CMAKE_<LANG>_LINKER_PREFERENCE` variables.
+
+If this property is not set by the user, it will be calculated at
+generate-time by CMake.

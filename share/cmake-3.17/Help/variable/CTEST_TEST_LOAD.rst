@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4bee876a75569d4666ffe1a9b6874da5f31cf81046df6fcbc0cbd4ef27e1a2df
-size 248
+CTEST_TEST_LOAD
+---------------
+
+Specify the ``TestLoad`` setting in the :ref:`CTest Test Step`
+of a :manual:`ctest(1)` dashboard client script.  This sets the
+default value for the ``TEST_LOAD`` option of the :command:`ctest_test`
+command.

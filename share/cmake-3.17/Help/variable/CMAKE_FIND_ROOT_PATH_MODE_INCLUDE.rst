@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:792988e99eee743be5affb9709162e079418ef83add08da2cbb94b0811364c80
-size 193
+CMAKE_FIND_ROOT_PATH_MODE_INCLUDE
+---------------------------------
+
+.. |FIND_XXX| replace:: :command:`find_file` and :command:`find_path`
+
+.. include:: CMAKE_FIND_ROOT_PATH_MODE_XXX.txt

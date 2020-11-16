@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9dca7bc6a64c02ef85a105923c6ad69f8448ef2fffe12fbf0063bbcebc513b00
-size 342
+PROJECT_DESCRIPTION
+-------------------
+
+Short project description given to the project command.
+
+This is the description given to the most recently called :command:`project`
+command in the current directory scope or above.  To obtain the description
+of the top level project, see the :variable:`CMAKE_PROJECT_DESCRIPTION`
+variable.

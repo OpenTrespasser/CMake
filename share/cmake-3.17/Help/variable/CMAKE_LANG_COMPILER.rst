@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:52825a412a98fd23c82f94cb5974733a3e8a2b08e43398650392d8474e088cc5
-size 208
+CMAKE_<LANG>_COMPILER
+---------------------
+
+The full path to the compiler for ``LANG``.
+
+This is the command that will be used as the ``<LANG>`` compiler.  Once
+set, you can not change this variable.

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:65194e5aceee93caf056cff4a706a4336a1eef73b46c467b2dc3c949496452e0
-size 240
+VS_WINRT_REFERENCES
+-------------------
+
+Visual Studio project Windows Runtime Metadata references
+
+Adds one or more semicolon-delimited WinRT references to a generated
+Visual Studio project.  For example, "Windows;Windows.UI.Core".

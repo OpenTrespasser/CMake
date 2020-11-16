@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:992007499284aa135fd9b5aec40e6d806aac6cc241dd2ad33fb5f6e9e46f36f5
-size 217
+CMAKE_AIX_EXPORT_ALL_SYMBOLS
+----------------------------
+
+Default value for :prop_tgt:`AIX_EXPORT_ALL_SYMBOLS` target property.
+This variable is used to initialize the property on each target as it is
+created.

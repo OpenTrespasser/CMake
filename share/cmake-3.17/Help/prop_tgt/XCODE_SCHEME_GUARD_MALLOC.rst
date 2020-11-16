@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f546f052be49fe2b06d631be3f9c4a02b2e7d8878b1957c8c3afa1550f089fb0
-size 434
+XCODE_SCHEME_GUARD_MALLOC
+------------------------------
+
+Whether to enable ``Guard Malloc``
+in the Diagnostics section of the generated Xcode scheme.
+
+This property is initialized by the value of the variable
+:variable:`CMAKE_XCODE_SCHEME_GUARD_MALLOC` if it is set
+when a target is created.
+
+Please refer to the :prop_tgt:`XCODE_GENERATE_SCHEME` target property
+documentation to see all Xcode schema related properties.

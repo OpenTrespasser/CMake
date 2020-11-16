@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:049c1d86e422ec4823a4124d70dcf6cee8cb06222a1f57fc7e03792f1dfe2e3a
-size 400
+PRECOMPILE_HEADERS
+------------------
+
+List of header files to precompile.
+
+This property holds a :ref:`semicolon-separated list <CMake Language Lists>`
+of header files to precompile specified so far for its target.
+Use the :command:`target_precompile_headers` command to append more header
+files.
+
+This property supports
+:manual:`generator expressions <cmake-generator-expressions(7)>`.

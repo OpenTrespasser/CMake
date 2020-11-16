@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cd9d73cd92f7d709b525820a513740fa2eec44d02756d05cc38ae4aebb25dd9e
-size 196
+      program mpi_ver
+      @MPI_Fortran_INCLUDE_LINE@
+      print *, 'INFO:SUBARRAYS[', MPI_SUBARRAYS_SUPPORTED, ']-ASYNCPROT[', MPI_ASYNC_PROTECTS_NONBLOCKING, ']'
+      end program mpi_ver

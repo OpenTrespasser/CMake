@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d7a3cf414708019ecd8fc16d4182ae1aac59994f8e99d105e3882fcbcdd8d454
-size 471
+use_mangled_mesa
+----------------
+
+Disallowed since version 3.0.  See CMake Policy :policy:`CMP0030`.
+
+Copy mesa headers for use in combination with system GL.
+
+::
+
+  use_mangled_mesa(PATH_TO_MESA OUTPUT_DIRECTORY)
+
+The path to mesa includes, should contain ``gl_mangle.h``.  The mesa
+headers are copied to the specified output directory.  This allows
+mangled mesa headers to override other GL headers by being added to
+the include directory path earlier.

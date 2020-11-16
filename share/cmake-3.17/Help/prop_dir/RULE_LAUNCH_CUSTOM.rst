@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1a054961da612325c945e653f5ba2a177cdf1f84d420b8de3c5e2a989f0314cc
-size 191
+RULE_LAUNCH_CUSTOM
+------------------
+
+Specify a launcher for custom rules.
+
+See the global property of the same name for details.  This overrides
+the global property for a directory.

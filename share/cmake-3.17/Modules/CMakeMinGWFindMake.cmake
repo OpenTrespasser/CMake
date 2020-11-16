@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dc36e9b80fcebb504972f5c0bc4e0384b822b3183b319ba3ed995b67c956ed1f
-size 448
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+
+find_program(CMAKE_MAKE_PROGRAM mingw32-make.exe PATHS
+  "[HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\MinGW;InstallLocation]/bin"
+  c:/MinGW/bin /MinGW/bin
+  "[HKEY_CURRENT_USER\\Software\\CodeBlocks;Path]/MinGW/bin"
+  )
+
+mark_as_advanced(CMAKE_MAKE_PROGRAM)

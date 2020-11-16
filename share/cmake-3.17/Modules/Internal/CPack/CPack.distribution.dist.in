@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2eb882af1adbb3e6d07b8836670ecab8b658bf6b903c0fdd6579a78b9e27f9d1
-size 457
+<?xml version="1.0" encoding="UTF-8"?>
+<installer-gui-script minSpecVersion="1.0">
+    <title>@CPACK_PACKAGE_NAME@</title>
+    <welcome file="@CPACK_RESOURCE_FILE_WELCOME_NOPATH@"/>
+    <readme file="@CPACK_RESOURCE_FILE_README_NOPATH@"/>
+    <license file="@CPACK_RESOURCE_FILE_LICENSE_NOPATH@"/>
+    <options allow-external-scripts="no" customize="allow" rootVolumeOnly="false"></options>
+    @CPACK_PACKAGEMAKER_CHOICES@
+</installer-gui-script>

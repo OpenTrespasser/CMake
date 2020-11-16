@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fb50da5729175d71d8cf4ae2d280e9ebf902889558e93efd857dbefc9dc4757c
-size 377
+CMAKE_FIND_LIBRARY_SUFFIXES
+---------------------------
+
+Suffixes to append when looking for libraries.
+
+This specifies what suffixes to add to library names when the
+:command:`find_library` command looks for libraries.  On Windows systems this
+is typically ``.lib`` and ``.dll``, meaning that when trying to find the
+``foo`` library it will look for ``foo.dll`` etc.

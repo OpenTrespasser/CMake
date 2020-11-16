@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:96b48e7d831ebf63ca40ca88d591988b44faa779d2207d8ff58557115509ccf8
-size 367
+VS_DOTNET_TARGET_FRAMEWORK_VERSION
+----------------------------------
+
+Specify the .NET target framework version.
+
+Used to specify the .NET target framework version for C++/CLI. For
+example, "v4.5".
+
+This property is deprecated and should not be used anymore. Use
+:prop_tgt:`DOTNET_TARGET_FRAMEWORK` or
+:prop_tgt:`DOTNET_TARGET_FRAMEWORK_VERSION` instead.

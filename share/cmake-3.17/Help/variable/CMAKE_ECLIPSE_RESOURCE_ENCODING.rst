@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ca60e31b8549c352a9d5ff151a5d8c1b5fc16558616abeefe8b89cc94c684dc9
-size 268
+CMAKE_ECLIPSE_RESOURCE_ENCODING
+-------------------------------
+
+This cache variable tells the :generator:`Eclipse CDT4` project generator
+to set the resource encoding to the given value in generated project files.
+If no value is given, no encoding will be set.

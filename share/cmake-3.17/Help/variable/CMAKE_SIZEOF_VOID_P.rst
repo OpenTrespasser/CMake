@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cf46680f1d2435f524f27a913024fce78c8832558c7908400e5c1092350224d7
-size 279
+CMAKE_SIZEOF_VOID_P
+-------------------
+
+Size of a ``void`` pointer.
+
+This is set to the size of a pointer on the target machine, and is determined
+by a try compile.  If a 64-bit size is found, then the library search
+path is modified to look for 64-bit libraries first.

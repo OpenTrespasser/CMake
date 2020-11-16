@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fabb0fe7893850b83bf69b95a065a79dbb534afb2d5cc0d28971defd3d08f14e
-size 475
+VS_MOBILE_EXTENSIONS_VERSION
+----------------------------
+
+Visual Studio Windows 10 Mobile Extensions Version
+
+Specifies the version of the Mobile Extensions that should be included in the
+target. For example ``10.0.10240.0``. If the value is not specified, the Mobile
+Extensions will not be included. To use the same version of the extensions as
+the Windows 10 SDK that is being used, you can use the
+:variable:`CMAKE_VS_WINDOWS_TARGET_PLATFORM_VERSION` variable.

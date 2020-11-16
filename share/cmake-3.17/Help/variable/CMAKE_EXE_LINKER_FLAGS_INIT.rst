@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:86e0296961f37c3c757b78390b0dc9795deeec679eda502f90803119c027bb62
-size 468
+CMAKE_EXE_LINKER_FLAGS_INIT
+---------------------------
+
+Value used to initialize the :variable:`CMAKE_EXE_LINKER_FLAGS`
+cache entry the first time a build tree is configured.
+This variable is meant to be set by a :variable:`toolchain file
+<CMAKE_TOOLCHAIN_FILE>`.  CMake may prepend or append content to
+the value based on the environment and target platform.
+
+See also the configuration-specific variable
+:variable:`CMAKE_EXE_LINKER_FLAGS_<CONFIG>_INIT`.

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dbfe8690b54f4a4ba392cc1991af93e8e724db8ac651d2a943b76efa27831afe
-size 211
+MSVC80
+------
+
+Discouraged.  Use the :variable:`MSVC_VERSION` variable instead.
+
+``True`` when using the Microsoft Visual Studio ``v80`` toolset
+(``cl`` version 14) or another compiler that simulates it.

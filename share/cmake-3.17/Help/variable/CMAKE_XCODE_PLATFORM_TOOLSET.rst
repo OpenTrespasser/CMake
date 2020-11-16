@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a210496f1ca3468c23275e19ab5b96e57a8b18a73da7ed62336ddbe70cbf509e
-size 328
+CMAKE_XCODE_PLATFORM_TOOLSET
+----------------------------
+
+Xcode compiler selection.
+
+:generator:`Xcode` supports selection of a compiler from one of the installed
+toolsets.  CMake provides the name of the chosen toolset in this
+variable, if any is explicitly selected (e.g.  via the :manual:`cmake(1)`
+``-T`` option).

@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e066ef5c0787cd577e5951e0f1903c02b46a0623cdb72145274c571e587cd5b2
-size 506
+FFLAGS
+------
+
+.. include:: ENV_VAR.txt
+
+Default compilation flags to be used when compiling ``Fortran`` files. Will only
+be used by CMake on the first configuration to determine ``Fortran`` default
+compilation flags, after which the value for ``FFLAGS`` is stored in the cache
+as :variable:`CMAKE_Fortran_FLAGS <CMAKE_<LANG>_FLAGS>`. For any configuration
+run (including the first), the environment variable will be ignored if
+the :variable:`CMAKE_Fortran_FLAGS <CMAKE_<LANG>_FLAGS>` variable is defined.

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9bed6570207de8fbc9f6f4c242ad5d0b9e6d57388a531871bbbd9028182be6c4
-size 350
+
+set(_compiler_id_pp_test "defined(__PATHCC__)")
+
+set(_compiler_id_version_compute "
+# define @PREFIX@COMPILER_VERSION_MAJOR @MACRO_DEC@(__PATHCC__)
+# define @PREFIX@COMPILER_VERSION_MINOR @MACRO_DEC@(__PATHCC_MINOR__)
+# if defined(__PATHCC_PATCHLEVEL__)
+#  define @PREFIX@COMPILER_VERSION_PATCH @MACRO_DEC@(__PATHCC_PATCHLEVEL__)
+# endif")

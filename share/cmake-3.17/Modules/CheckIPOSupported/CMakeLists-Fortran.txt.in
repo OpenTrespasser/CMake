@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:108fb0b98fbcd1f61d58c0fcbca7496ee80a93d04d3f6be2ea88d9c8903eb1c7
-size 234
+cmake_minimum_required(VERSION "@CMAKE_VERSION@")
+project("@TRY_COMPILE_PROJECT_NAME@" LANGUAGES Fortran)
+
+cmake_policy(SET CMP0069 NEW)
+
+add_library(foo foo.f)
+add_executable(boo main.f)
+target_link_libraries(boo PUBLIC foo)

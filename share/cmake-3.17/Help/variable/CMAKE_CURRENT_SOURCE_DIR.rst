@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bb0b107d8e524460253e49f2bdfe31f53f3c6d1e5590b96ca5563bd685e31d10
-size 437
+CMAKE_CURRENT_SOURCE_DIR
+------------------------
+
+The path to the source directory currently being processed.
+
+This the full path to the source directory that is currently being
+processed by cmake.
+
+When run in -P script mode, CMake sets the variables
+:variable:`CMAKE_BINARY_DIR`, :variable:`CMAKE_SOURCE_DIR`,
+:variable:`CMAKE_CURRENT_BINARY_DIR` and
+:variable:`CMAKE_CURRENT_SOURCE_DIR` to the current working directory.

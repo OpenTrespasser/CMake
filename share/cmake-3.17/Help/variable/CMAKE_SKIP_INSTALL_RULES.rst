@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:35696f94d282cbefbd9605d7cfea506f472effab46c2713bf35e344015702d63
-size 264
+CMAKE_SKIP_INSTALL_RULES
+------------------------
+
+Whether to disable generation of installation rules.
+
+If ``TRUE``, CMake will neither generate installation rules nor
+will it generate ``cmake_install.cmake`` files. This variable is ``FALSE`` by
+default.

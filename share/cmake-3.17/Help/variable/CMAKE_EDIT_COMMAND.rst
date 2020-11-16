@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:331c8b3a5814d82d3371c43c9fb60425bc1300ea0a0366b6e001d525d4ee0d18
-size 345
+CMAKE_EDIT_COMMAND
+------------------
+
+Full path to :manual:`cmake-gui(1)` or :manual:`ccmake(1)`.  Defined only for
+:ref:`Makefile Generators` when not using an "extra" generator for an IDE.
+
+This is the full path to the CMake executable that can graphically
+edit the cache.  For example, :manual:`cmake-gui(1)` or :manual:`ccmake(1)`.

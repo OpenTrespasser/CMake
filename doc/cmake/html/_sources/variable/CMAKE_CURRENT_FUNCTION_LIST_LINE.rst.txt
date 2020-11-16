@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:316f8c1771e31db670c24c5a2d30929a58b3af3296415a3c16a712f7d7876289
-size 210
+CMAKE_CURRENT_FUNCTION_LIST_LINE
+--------------------------------
+
+When executing code inside a :command:`function`, this variable
+contains the line number in the listfile where a current function has defined.

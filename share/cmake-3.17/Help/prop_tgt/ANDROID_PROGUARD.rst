@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8a7014eb007a526306289d9f48917e2bcf9dc73ce6ece0458fb8fc998d2bccbd
-size 384
+ANDROID_PROGUARD
+----------------
+
+When this property is set to true that enables the ProGuard tool to shrink,
+optimize, and obfuscate the code by removing unused code and renaming
+classes, fields, and methods with semantically obscure names.
+This property is initialized by the value of the
+:variable:`CMAKE_ANDROID_PROGUARD` variable if it is set
+when a target is created.

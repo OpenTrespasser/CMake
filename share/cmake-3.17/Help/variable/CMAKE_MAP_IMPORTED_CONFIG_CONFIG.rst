@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:91a869399e6b316bd135bbb35643264e6fc98e6ddee13e6481e601d49783493b
-size 315
+CMAKE_MAP_IMPORTED_CONFIG_<CONFIG>
+----------------------------------
+
+Default value for :prop_tgt:`MAP_IMPORTED_CONFIG_<CONFIG>` of targets.
+
+This variable is used to initialize the
+:prop_tgt:`MAP_IMPORTED_CONFIG_<CONFIG>` property on all the targets.  See
+that target property for additional information.

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6642f45c3f34a1d3463fe67ea45678b6daa898a0ab5d873d2caec4875558376a
-size 349
+TARGET_SUPPORTS_SHARED_LIBS
+---------------------------
+
+Does the target platform support shared libraries.
+
+TARGET_SUPPORTS_SHARED_LIBS is a boolean specifying whether the target
+platform supports shared libraries.  Basically all current general
+general purpose OS do so, the exception are usually embedded systems
+with no or special OSs.

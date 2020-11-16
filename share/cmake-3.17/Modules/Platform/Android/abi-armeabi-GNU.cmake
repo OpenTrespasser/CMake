@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:416f7efe9224ea91f490201c8a37e3b081058df5a4993cb340eb81e98df12942
-size 415
+# <ndk>/build/core/toolchains/arm-linux-androideabi-4.9/setup.mk
+string(APPEND _ANDROID_ABI_INIT_CFLAGS
+  " -march=armv5te"
+  )
+
+if(CMAKE_ANDROID_ARM_MODE)
+  string(APPEND _ANDROID_ABI_INIT_CFLAGS " -marm")
+else()
+  string(APPEND _ANDROID_ABI_INIT_CFLAGS " -mthumb")
+endif()
+
+string(APPEND _ANDROID_ABI_INIT_CFLAGS
+  " -msoft-float"
+  " -mtune=xscale"
+  )
+
+include(Platform/Android/abi-common-GNU)

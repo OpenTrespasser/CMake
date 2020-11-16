@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5e83a508b136b8ed4d41bfa6045e9435984703d5e32e69893984ffa6ccae8439
-size 247
+CMAKE_EXECUTE_PROCESS_COMMAND_ECHO
+----------------------------------
+
+If this variable is set to ``STDERR``, ``STDOUT`` or ``NONE`` then commands
+in :command:`execute_process` calls will be printed to either stderr or
+stdout or not at all.

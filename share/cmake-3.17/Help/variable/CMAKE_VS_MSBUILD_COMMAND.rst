@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:509fd562841869d91ef8d4f801ced49fd7d4958491e6f2435c19eca510b753ad
-size 496
+CMAKE_VS_MSBUILD_COMMAND
+------------------------
+
+The generators for :generator:`Visual Studio 10 2010` and above set this
+variable to the ``MSBuild.exe`` command installed with the corresponding
+Visual Studio version.
+
+This variable is not defined by other generators even if ``MSBuild.exe``
+is installed on the computer.
+
+The :variable:`CMAKE_VS_DEVENV_COMMAND` is also provided for the
+non-Express editions of Visual Studio.
+See also the :variable:`CMAKE_MAKE_PROGRAM` variable.

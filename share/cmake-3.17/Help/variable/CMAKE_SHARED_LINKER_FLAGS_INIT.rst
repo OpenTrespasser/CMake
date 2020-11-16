@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5f4ed7f3dc976b71dafdcd233ea1a22f4c43b868d2a8a5a8555cfba6e1003fea
-size 480
+CMAKE_SHARED_LINKER_FLAGS_INIT
+------------------------------
+
+Value used to initialize the :variable:`CMAKE_SHARED_LINKER_FLAGS`
+cache entry the first time a build tree is configured.
+This variable is meant to be set by a :variable:`toolchain file
+<CMAKE_TOOLCHAIN_FILE>`.  CMake may prepend or append content to
+the value based on the environment and target platform.
+
+See also the configuration-specific variable
+:variable:`CMAKE_SHARED_LINKER_FLAGS_<CONFIG>_INIT`.

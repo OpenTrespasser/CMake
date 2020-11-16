@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6fad21896b88b9fac17529e4832945adfac061f989f828622c31e0db14b829bc
-size 206
+CTEST_PARALLEL_LEVEL
+--------------------
+
+.. include:: ENV_VAR.txt
+
+Specify the number of tests for CTest to run in parallel. See :manual:`ctest(1)`
+for more information on parallel test execution.

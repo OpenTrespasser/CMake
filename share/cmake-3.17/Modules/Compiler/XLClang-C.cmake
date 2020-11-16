@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e0f14791bc8352d46ca63e1d08b70bf470fcda1203a61b0e68e6327cbb152690
-size 858
+include(Compiler/XLClang)
+__compiler_xlclang(C)
+
+if (CMAKE_C_COMPILER_VERSION VERSION_GREATER_EQUAL 13.1.1)
+  set(CMAKE_C90_STANDARD_COMPILE_OPTION  "-std=c89")
+  set(CMAKE_C90_EXTENSION_COMPILE_OPTION "-std=gnu89")
+  set(CMAKE_C90_STANDARD__HAS_FULL_SUPPORT ON)
+  set(CMAKE_C99_STANDARD_COMPILE_OPTION  "-std=c99")
+  set(CMAKE_C99_EXTENSION_COMPILE_OPTION "-std=gnu99")
+  set(CMAKE_C99_STANDARD__HAS_FULL_SUPPORT ON)
+  set(CMAKE_C11_STANDARD_COMPILE_OPTION  "-qlanglvl=extc1x")
+  set(CMAKE_C11_EXTENSION_COMPILE_OPTION "-qlanglvl=extc1x")
+  if (CMAKE_C_COMPILER_VERSION VERSION_GREATER_EQUAL 13.1.2)
+    set(CMAKE_C11_STANDARD_COMPILE_OPTION  "-std=c11")
+    set(CMAKE_C11_EXTENSION_COMPILE_OPTION "-std=gnu11")
+    set(CMAKE_C11_STANDARD__HAS_FULL_SUPPORT ON)
+  endif ()
+endif()
+
+__compiler_check_default_language_standard(C 13.1.1 99)

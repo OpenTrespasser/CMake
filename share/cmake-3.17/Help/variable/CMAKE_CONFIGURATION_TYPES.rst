@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c0ea85f242cc30f9c0cfaec59857d8d5e522d09fe9f09181d19159290c1a5853
-size 467
+CMAKE_CONFIGURATION_TYPES
+-------------------------
+
+Specifies the available build types on multi-config generators.
+
+This specifies what build types (configurations) will be available
+such as ``Debug``, ``Release``, ``RelWithDebInfo`` etc.  This has reasonable
+defaults on most platforms, but can be extended to provide other build
+types.  See also :variable:`CMAKE_BUILD_TYPE` for details of managing
+configuration data, and :variable:`CMAKE_CFG_INTDIR`.

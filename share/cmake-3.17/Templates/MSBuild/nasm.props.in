@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9c5b6803c59afc51f41beb700d72f0b25e7ecc62f78d0a8e012771c0375d7617
-size 874
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(NASMBeforeTargets)' == '' and '$(NASMAfterTargets)' == '' and '$(ConfigurationType)' != 'Makefile'">
+    <NASMBeforeTargets>Midl</NASMBeforeTargets>
+    <NASMAfterTargets>CustomBuild</NASMAfterTargets>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <NASM>
+      <OutputFormat>$(IntDir)%(FileName).obj</OutputFormat>
+      <Outputswitch>0</Outputswitch>
+      <CompilerNasm>@CMAKE_ASM_NASM_COMPILER@</CompilerNasm>
+      <PackAlignmentBoundary>0</PackAlignmentBoundary>
+      <CommandLineTemplate>"%(CompilerNasm)" [AllOptions] [AdditionalOptions] "%(FullPath)"</CommandLineTemplate>
+      <ExecutionDescription>Assembling %(Filename)%(Extension)</ExecutionDescription>
+    </NASM>
+  </ItemDefinitionGroup>
+</Project>

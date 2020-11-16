@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ecc546537b538e354c8d6b91580d3c75cf7562256b970437b15df9f1a9a0552d
-size 368
+include(Compiler/GHS)
+
+set(CMAKE_CXX_VERBOSE_FLAG "-v")
+set(CMAKE_CXX_OUTPUT_EXTENSION ".o")
+
+string(APPEND CMAKE_CXX_FLAGS_INIT " ")
+string(APPEND CMAKE_CXX_FLAGS_DEBUG_INIT " -Odebug -g")
+string(APPEND CMAKE_CXX_FLAGS_MINSIZEREL_INIT " -Ospace")
+string(APPEND CMAKE_CXX_FLAGS_RELEASE_INIT " -O")
+string(APPEND CMAKE_CXX_FLAGS_RELWITHDEBINFO_INIT " -O -g")

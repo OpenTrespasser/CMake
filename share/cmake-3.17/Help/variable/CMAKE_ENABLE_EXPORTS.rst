@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5eea37844eef7fb73f4e4b2eb3eed238e6bc6b879ea1aa631527c27ab65dfb50
-size 341
+CMAKE_ENABLE_EXPORTS
+--------------------
+
+Specify whether executables export symbols for loadable modules.
+
+This variable is used to initialize the :prop_tgt:`ENABLE_EXPORTS` target
+property for executable targets when they are created by calls to the
+:command:`add_executable` command.  See the property documentation for details.

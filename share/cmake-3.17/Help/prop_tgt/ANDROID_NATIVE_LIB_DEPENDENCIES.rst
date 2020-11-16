@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cf3b130e5af9c89ef4c8c6328753fc583a9862dc3e0145a0c2b94a59cd581113
-size 508
+ANDROID_NATIVE_LIB_DEPENDENCIES
+-------------------------------
+
+Set the Android property that specifies the .so dependencies.
+This is a string property.
+
+This property is initialized by the value of the
+:variable:`CMAKE_ANDROID_NATIVE_LIB_DEPENDENCIES` variable if it is set
+when a target is created.
+
+Contents of ``ANDROID_NATIVE_LIB_DEPENDENCIES`` may use
+"generator expressions" with the syntax ``$<...>``. See the
+:manual:`cmake-generator-expressions(7)` manual for
+available expressions.

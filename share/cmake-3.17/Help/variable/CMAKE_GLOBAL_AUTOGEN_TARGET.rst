@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:52df3f8273e67d99882045efd4fa4294d9c9002420c3ce2b1db834cb7d251aa6
-size 1060
+CMAKE_GLOBAL_AUTOGEN_TARGET
+---------------------------
+
+Switch to enable generation of a global ``autogen`` target.
+
+When :variable:`CMAKE_GLOBAL_AUTOGEN_TARGET` is enabled, a custom target
+``autogen`` is generated.  This target depends on all :prop_tgt:`AUTOMOC` and
+:prop_tgt:`AUTOUIC` generated ``<ORIGIN>_autogen`` targets in the project.
+By building the global ``autogen`` target, all :prop_tgt:`AUTOMOC` and
+:prop_tgt:`AUTOUIC` files in the project will be generated.
+
+The name of the global ``autogen`` target can be changed by setting
+:variable:`CMAKE_GLOBAL_AUTOGEN_TARGET_NAME`.
+
+By default :variable:`CMAKE_GLOBAL_AUTOGEN_TARGET` is unset.
+
+See the :manual:`cmake-qt(7)` manual for more information on using CMake
+with Qt.
+
+Note
+^^^^
+
+``<ORIGIN>_autogen`` targets by default inherit their origin target's
+dependencies.  This might result in unintended dependency target
+builds when only ``<ORIGIN>_autogen`` targets are built.  A solution is to
+disable :prop_tgt:`AUTOGEN_ORIGIN_DEPENDS` on the respective origin targets.

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:857b922661679f67076f03d795140b20d0b73d2c791ae133cf3f12c486d2b62f
-size 231
+CMAKE_<LANG>_IGNORE_EXTENSIONS
+------------------------------
+
+File extensions that should be ignored by the build.
+
+This is a list of file extensions that may be part of a project for a
+given language but are not compiled.

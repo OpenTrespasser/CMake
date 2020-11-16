@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9e5a20e1e511a888891d31c0caafafaa6d0080bba7054f678a95ea7930e63f5f
-size 846
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+#[=======================================================================[.rst:
+UseJavaSymlinks
+---------------
+
+
+
+
+
+Helper script for UseJava.cmake
+#]=======================================================================]
+
+if (UNIX AND _JAVA_TARGET_OUTPUT_LINK)
+    if (_JAVA_TARGET_OUTPUT_NAME)
+        find_program(LN_EXECUTABLE
+            NAMES
+                ln
+        )
+
+        execute_process(
+            COMMAND ${LN_EXECUTABLE} -sf "${_JAVA_TARGET_OUTPUT_NAME}" "${_JAVA_TARGET_OUTPUT_LINK}"
+            WORKING_DIRECTORY ${_JAVA_TARGET_DIR}
+        )
+    else ()
+        message(SEND_ERROR "FATAL: Can't find _JAVA_TARGET_OUTPUT_NAME")
+    endif ()
+endif ()

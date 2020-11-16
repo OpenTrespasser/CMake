@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:babaf7105f3c2cf36bf5f6fecd3c3a1de7642a736593df449d423310d04391df
-size 490
+DOTNET_TARGET_FRAMEWORK_VERSION
+-------------------------------
+
+Specify the .NET target framework version.
+
+Used to specify the .NET target framework version for C++/CLI and C#.
+For example: ``v4.5``.
+
+This property is only evaluated for :ref:`Visual Studio Generators`
+VS 2010 and above.
+
+To initialize this variable for all targets set
+:variable:`CMAKE_DOTNET_TARGET_FRAMEWORK` or
+:variable:`CMAKE_DOTNET_TARGET_FRAMEWORK_VERSION`. If both are set,
+the latter is ignored.

@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6164b7337c7903632393219737c8fa53b9c2c346c52892982b5f8f9e4873996c
-size 410
+CMAKE_C_STANDARD_REQUIRED
+-------------------------
+
+Default value for :prop_tgt:`C_STANDARD_REQUIRED` property of targets.
+
+This variable is used to initialize the :prop_tgt:`C_STANDARD_REQUIRED`
+property on all targets.  See that target property for additional
+information.
+
+See the :manual:`cmake-compile-features(7)` manual for information on
+compile features and a list of supported compilers.

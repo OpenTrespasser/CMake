@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:894969c2de8232da06eaf84b1edbcd610e7cc30104a16c97cca3b16d0aa2d68d
-size 648
+SUBDIRECTORIES
+--------------
+
+This read-only directory property contains a
+:ref:`semicolon-separated list <CMake Language Lists>` of subdirectories processed so far by
+the :command:`add_subdirectory` or :command:`subdirs` commands.  Each entry is
+the absolute path to the source directory (containing the ``CMakeLists.txt``
+file).  This is suitable to pass to the :command:`get_property` command
+``DIRECTORY`` option.
+
+.. note::
+
+  The :command:`subdirs` command does not process its arguments until
+  after the calling directory is fully processed.  Therefore looking
+  up this property in the current directory will not see them.

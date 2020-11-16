@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:166b385a4543ffeff870d94c099b16b2e72bb3bb95119fe3d934ebcadb2b38ae
-size 209
+CMAKE_NOT_USING_CONFIG_FLAGS
+----------------------------
+
+Skip ``_BUILD_TYPE`` flags if true.
+
+This is an internal flag used by the generators in CMake to tell CMake
+to skip the ``_BUILD_TYPE`` flags.

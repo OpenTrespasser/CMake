@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5d687c971db63743003b33aaea49f014d63707dfbc34c51167aa6e8a1e7399e5
-size 371
+CMAKE_<LANG>_COMPILER_VERSION
+-----------------------------
+
+Compiler version string.
+
+Compiler version in major[.minor[.patch[.tweak]]] format.  This
+variable is not guaranteed to be defined for all compilers or
+languages.
+
+For example ``CMAKE_C_COMPILER_VERSION`` and
+``CMAKE_CXX_COMPILER_VERSION`` might indicate the respective C and C++
+compiler version.

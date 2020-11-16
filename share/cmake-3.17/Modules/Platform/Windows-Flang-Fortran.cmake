@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4fdf961bf61436caed2ba00ff48d62325ed9148a4e25ab789abbdf55b9aedd06
-size 645
+include(Platform/Windows-MSVC)
+__windows_compiler_msvc(Fortran)
+set(CMAKE_Fortran_COMPILE_OBJECT "<CMAKE_Fortran_COMPILER> ${_COMPILE_Fortran} <DEFINES> <INCLUDES> <FLAGS> -o <OBJECT> -c <SOURCE>")
+
+set(CMAKE_Fortran_COMPILE_OPTIONS_MSVC_RUNTIME_LIBRARY_MultiThreaded         -Xclang --dependent-lib=libcmt)
+set(CMAKE_Fortran_COMPILE_OPTIONS_MSVC_RUNTIME_LIBRARY_MultiThreadedDLL      -Xclang --dependent-lib=msvcrt)
+set(CMAKE_Fortran_COMPILE_OPTIONS_MSVC_RUNTIME_LIBRARY_MultiThreadedDebug    -Xclang --dependent-lib=libcmtd)
+set(CMAKE_Fortran_COMPILE_OPTIONS_MSVC_RUNTIME_LIBRARY_MultiThreadedDebugDLL -Xclang --dependent-lib=msvcrtd)

@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:796d20da571180353af1c8026a650a2e65e9c9c50d21b3f9d6b6096ea941c0e3
-size 393
+# Usage: cmake -Dlib=lib.bat -Ddef=out.def -Ddll=out.dll -Dimp=out.dll.a -P GNUtoMS_lib.cmake
+get_filename_component(name ${dll} NAME) # .dll file name
+string(REGEX REPLACE "\\.dll\\.a$" ".lib" out "${imp}") # .dll.a -> .lib
+execute_process(
+  COMMAND ${lib} /def:${def} /name:${name} /out:${out}
+  RESULT_VARIABLE res
+  )
+if(res)
+  message(FATAL_ERROR "lib failed: ${res}")
+endif()

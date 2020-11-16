@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a18ea8b4b789eb892e53af9bc759ae57037265f770fab5a8aed18a0e81db45e2
-size 510
+set(CMAKE_Fortran_VERBOSE_FLAG "-v")
+set(CMAKE_Fortran_FORMAT_FIXED_FLAG "+source=fixed")
+set(CMAKE_Fortran_FORMAT_FREE_FLAG "+source=free")
+
+set(CMAKE_Fortran_CREATE_ASSEMBLY_SOURCE "<CMAKE_Fortran_COMPILER> <DEFINES> <INCLUDES> <FLAGS> -S <SOURCE> -o <ASSEMBLY_SOURCE>")
+set(CMAKE_Fortran_CREATE_PREPROCESSED_SOURCE "<CMAKE_Fortran_COMPILER> <DEFINES> <INCLUDES> <FLAGS> -E <SOURCE> > <PREPROCESSED_SOURCE>")
+
+set(CMAKE_Fortran_LINKER_WRAPPER_FLAG "-Wl,")
+set(CMAKE_Fortran_LINKER_WRAPPER_FLAG ",")

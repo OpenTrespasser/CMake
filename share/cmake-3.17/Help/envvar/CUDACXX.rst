@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ce67687850455d4ca84100274ff3e6af5d0859d31e6f3be18d11930d8a6dde7c
-size 492
+CUDACXX
+-------
+
+.. include:: ENV_VAR.txt
+
+Preferred executable for compiling ``CUDA`` language files. Will only be used by
+CMake on the first configuration to determine ``CUDA`` compiler, after which the
+value for ``CUDA`` is stored in the cache as
+:variable:`CMAKE_CUDA_COMPILER <CMAKE_<LANG>_COMPILER>`. For any configuration
+run (including the first), the environment variable will be ignored if the
+:variable:`CMAKE_CUDA_COMPILER <CMAKE_<LANG>_COMPILER>` variable is defined.

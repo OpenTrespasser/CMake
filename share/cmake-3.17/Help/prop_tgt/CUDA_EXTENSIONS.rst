@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:16c86825b34808fcc400a7b1b296b41d8746d8614806a63fcdeea8e2acc359df
-size 712
+CUDA_EXTENSIONS
+---------------
+
+Boolean specifying whether compiler specific extensions are requested.
+
+This property specifies whether compiler specific extensions should be
+used.  For some compilers, this results in adding a flag such
+as ``-std=gnu++11`` instead of ``-std=c++11`` to the compile line.  This
+property is ``ON`` by default. The basic CUDA/C++ standard level is
+controlled by the :prop_tgt:`CUDA_STANDARD` target property.
+
+See the :manual:`cmake-compile-features(7)` manual for information on
+compile features and a list of supported compilers.
+
+This property is initialized by the value of
+the :variable:`CMAKE_CUDA_EXTENSIONS` variable if it is set when a target
+is created.

@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4daf174b66c357902df5c892f63fd97b3616d69addc72293afe9cbe9881af14b
-size 925
+CMAKE_CURRENT_FUNCTION_LIST_DIR
+-------------------------------
+
+When executing code inside a :command:`function`, this variable
+contains the full directory of the listfile defining the current function.
+
+It is quite common practice in CMake that modules use some additional files
+(e.g., templates to render).  And the code typically did the following:
+
+.. code-block:: cmake
+    :caption: Bad
+
+    set(_THIS_MODULE_BASE_DIR "${CMAKE_CURRENT_LIST_DIR}")
+
+    function(foo)
+      configure_file(
+        "${_THIS_MODULE_BASE_DIR}/some.template.in"
+        some.output
+      )
+    endfunction()
+
+Using this variable inside a function eliminates the neccessity of the
+additional one with "global" scope:
+
+.. code-block:: cmake
+    :caption: Good
+
+    function(foo)
+      configure_file(
+        "${CMAKE_CURRENT_FUNCTION_LIST_DIR}/some.template.in"
+        some.output
+      )
+    endfunction()

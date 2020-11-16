@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d840a242f6e833f1471a398aa08da7b5e26b539bfb9de82d28e650b3462659c6
-size 275
+CMAKE_IMPORT_LIBRARY_PREFIX
+---------------------------
+
+The prefix for import libraries that you link to.
+
+The prefix to use for the name of an import library if used on this
+platform.
+
+``CMAKE_IMPORT_LIBRARY_PREFIX_<LANG>`` overrides this for language ``<LANG>``.

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c39550f277b794ac9c1ce05e0154694f44e0511eb25318a52b9212bb4d207e92
-size 257
+ARCHIVE_OUTPUT_NAME_<CONFIG>
+----------------------------
+
+Per-configuration output name for
+:ref:`ARCHIVE <Archive Output Artifacts>` target files.
+
+This is the configuration-specific version of the
+:prop_tgt:`ARCHIVE_OUTPUT_NAME` target property.

@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:68f97ecedc0a4259c12e0b9459388dc7480a9966ffd5ec88721d4cf60bb5a01b
-size 460
+LANGUAGE
+--------
+
+What programming language is the file.
+
+A property that can be set to indicate what programming language the
+source file is.  If it is not set the language is determined based on
+the file extension.  Typical values are ``CXX`` (i.e.  C++), ``C``,
+``CSharp``, ``CUDA``, ``Fortran``, and ``ASM``.  Setting this
+property for a file means this file will be compiled.  Do not set this
+for headers or files that should not be compiled.

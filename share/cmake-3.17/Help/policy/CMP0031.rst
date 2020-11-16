@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6bd8a1967543838f6fe2dd2e2c1a0d10f22c4e5ca8f877ebe7bc3e0935ab96ac
-size 489
+CMP0031
+-------
+
+The :command:`load_command` command should not be called.
+
+This command was added in August 2002 to allow projects to add
+arbitrary commands implemented in C or C++.  However, it does
+not work when the toolchain in use does not match the ABI of
+the CMake process.  It has been mostly superseded by the
+:command:`macro` and :command:`function` commands.
+
+.. |disallowed_version| replace:: 3.0
+.. include:: DISALLOWED_COMMAND.txt
+
+.. include:: DEPRECATED.txt

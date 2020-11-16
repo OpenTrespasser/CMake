@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:97917241c719e2e70fbad075ed79fa70cc3085f37f0946bd994a718d23bb1293
-size 434
+CMAKE_BUILD_RPATH
+-----------------
+
+:ref:`Semicolon-separated list <CMake Language Lists>` specifying runtime path (``RPATH``)
+entries to add to binaries linked in the build tree (for platforms that
+support it).  The entries will *not* be used for binaries in the install
+tree.  See also the :variable:`CMAKE_INSTALL_RPATH` variable.
+
+This is used to initialize the :prop_tgt:`BUILD_RPATH` target property
+for all targets.

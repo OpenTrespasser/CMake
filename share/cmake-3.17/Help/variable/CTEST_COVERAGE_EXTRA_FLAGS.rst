@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ab32ef7ac289df513ef6714b397d3082acb6c77d6220ac1d7d934e2d837ba1d8
-size 158
+CTEST_COVERAGE_EXTRA_FLAGS
+--------------------------
+
+Specify the CTest ``CoverageExtraFlags`` setting
+in a :manual:`ctest(1)` dashboard client script.

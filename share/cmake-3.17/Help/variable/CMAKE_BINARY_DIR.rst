@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c8b78780862418306f8ee7777d8eabba28e109ae5eeb67cd778184a2cde3f2b5
-size 473
+CMAKE_BINARY_DIR
+----------------
+
+The path to the top level of the build tree.
+
+This is the full path to the top level of the current CMake build
+tree.  For an in-source build, this would be the same as
+:variable:`CMAKE_SOURCE_DIR`.
+
+When run in -P script mode, CMake sets the variables
+:variable:`CMAKE_BINARY_DIR`, :variable:`CMAKE_SOURCE_DIR`,
+:variable:`CMAKE_CURRENT_BINARY_DIR` and
+:variable:`CMAKE_CURRENT_SOURCE_DIR` to the current working directory.

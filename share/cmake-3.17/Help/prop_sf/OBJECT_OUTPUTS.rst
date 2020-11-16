@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8955cb0361c6440c4a33f0ae117763799ce8d4512d2089717e1d52046db03d1d
-size 373
+OBJECT_OUTPUTS
+--------------
+
+Additional outputs for a :generator:`Ninja` or :ref:`Makefile Generators` rule.
+
+Additional outputs created by compilation of this source file.  If any
+of these outputs is missing the object will be recompiled.  This is
+supported only on the :generator:`Ninja` and :ref:`Makefile Generators`
+and will be ignored on other generators.

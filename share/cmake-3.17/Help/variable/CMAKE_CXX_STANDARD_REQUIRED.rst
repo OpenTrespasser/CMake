@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:83ab1425cd8a5e9a06ad7c12eb23c83aecc40961c5521da8d63a9107dd2ea64e
-size 418
+CMAKE_CXX_STANDARD_REQUIRED
+---------------------------
+
+Default value for :prop_tgt:`CXX_STANDARD_REQUIRED` property of targets.
+
+This variable is used to initialize the :prop_tgt:`CXX_STANDARD_REQUIRED`
+property on all targets.  See that target property for additional
+information.
+
+See the :manual:`cmake-compile-features(7)` manual for information on
+compile features and a list of supported compilers.

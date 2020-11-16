@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c8dd5f171a6f78772e3fb14fa3af6a31fdfec684e2d61222386b8571bcd1e4f9
-size 1089
+CMAKE_INSTALL_DEFAULT_DIRECTORY_PERMISSIONS
+-------------------------------------------
+
+Default permissions for directories created implicitly during installation
+of files by :command:`install` and :command:`file(INSTALL)`.
+
+If ``make install`` is invoked and directories are implicitly created they
+get permissions set by :variable:`CMAKE_INSTALL_DEFAULT_DIRECTORY_PERMISSIONS`
+variable or platform specific default permissions if the variable is not set.
+
+Implicitly created directories are created if they are not explicitly installed
+by :command:`install` command but are needed to install a file on a certain
+path. Example of such locations are directories created due to the setting of
+:variable:`CMAKE_INSTALL_PREFIX`.
+
+Expected content of the :variable:`CMAKE_INSTALL_DEFAULT_DIRECTORY_PERMISSIONS`
+variable is a list of permissions that can be used by :command:`install` command
+`PERMISSIONS` section.
+
+Example usage:
+
+::
+
+ set(CMAKE_INSTALL_DEFAULT_DIRECTORY_PERMISSIONS
+      OWNER_READ
+      OWNER_WRITE
+      OWNER_EXECUTE
+      GROUP_READ
+    )

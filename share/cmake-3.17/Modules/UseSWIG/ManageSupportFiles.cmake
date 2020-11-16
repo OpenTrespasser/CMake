@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:044adebfa164104ae02ced336fe69915fccc769ce02a61601a732155ab2273b6
-size 1085
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+
+if (ACTION STREQUAL "CLEAN")
+  # Collect current list of generated files
+  file (GLOB files LIST_DIRECTORIES FALSE RELATIVE "${SUPPORT_FILES_WORKING_DIRECTORY}" "${SUPPORT_FILES_WORKING_DIRECTORY}/*")
+
+  if (files)
+    # clean-up the output directory
+    ## compute full paths
+    list (TRANSFORM files PREPEND "${SUPPORT_FILES_OUTPUT_DIRECTORY}/")
+    ## remove generated files from the output directory
+    file (REMOVE ${files})
+
+    # clean-up working directory
+    file (REMOVE_RECURSE "${SUPPORT_FILES_WORKING_DIRECTORY}")
+  endif()
+
+  file (MAKE_DIRECTORY "${SUPPORT_FILES_WORKING_DIRECTORY}")
+endif()
+
+if (ACTION STREQUAL "COPY")
+  # Collect current list of generated files
+  file (GLOB files LIST_DIRECTORIES FALSE "${SUPPORT_FILES_WORKING_DIRECTORY}/*")
+
+  if (files)
+    # copy files to the output directory
+    file (COPY ${files} DESTINATION "${SUPPORT_FILES_OUTPUT_DIRECTORY}")
+  endif()
+endif()

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:92ffd1bc0232f16aec4c7ecf7c11729e8df4397717498cf597500bf614d8c270
-size 300
+ANDROID_PROCESS_MAX
+-------------------
+
+Set the Android property that defines the maximum number of a
+parallel Android NDK compiler processes (e.g. ``4``).
+This property is initialized by the value of the
+:variable:`CMAKE_ANDROID_PROCESS_MAX` variable if it is set
+when a target is created.

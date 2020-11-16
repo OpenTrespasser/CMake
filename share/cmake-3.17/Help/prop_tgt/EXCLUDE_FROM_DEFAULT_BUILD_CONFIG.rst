@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e8d9a10c0aa30751b92b7cb1f559a3e4193eb5eb5300d5813ac73f0e4189fc28
-size 422
+EXCLUDE_FROM_DEFAULT_BUILD_<CONFIG>
+-----------------------------------
+
+Per-configuration version of target exclusion from ``Build Solution``.
+
+This is the configuration-specific version of
+:prop_tgt:`EXCLUDE_FROM_DEFAULT_BUILD`.  If the generic
+:prop_tgt:`EXCLUDE_FROM_DEFAULT_BUILD` is also set on a target,
+``EXCLUDE_FROM_DEFAULT_BUILD_<CONFIG>`` takes
+precedence in configurations for which it has a value.

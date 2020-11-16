@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8bf0fcfe6f64531fbce9b850445e23291dbc9a5ef3205749fbd403acac92b715
-size 237
+CMAKE_LINK_DEF_FILE_FLAG
+------------------------
+
+Linker flag to be used to specify a ``.def`` file for dll creation.
+
+The flag will be used to add a ``.def`` file when creating a dll on
+Windows; this is only defined on Windows.

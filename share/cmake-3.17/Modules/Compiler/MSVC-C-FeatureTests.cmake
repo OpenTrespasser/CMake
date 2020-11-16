@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fcb5454ea14a352ed12fbfb7246c36493f3a7f62bb2c0e5660d97c45ad4e9160
-size 309
+set(_cmake_oldestSupported "_MSC_VER >= 1600")
+
+# Not yet supported:
+#set(_cmake_feature_test_c_static_assert "")
+#set(_cmake_feature_test_c_restrict "")
+
+set(_cmake_feature_test_c_variadic_macros "${_cmake_oldestSupported}")
+set(_cmake_feature_test_c_function_prototypes "${_cmake_oldestSupported}")

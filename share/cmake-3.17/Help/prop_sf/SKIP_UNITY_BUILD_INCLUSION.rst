@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:916e819d773b35a5c84b83f8f97164d9426ac59db93df55af99a4fc2cff9b9c3
-size 519
+SKIP_UNITY_BUILD_INCLUSION
+--------------------------
+
+Setting this property to true ensures the source file will be skipped by
+unity builds when its associated target has its :prop_tgt:`UNITY_BUILD`
+property set to true.  The source file will instead be compiled on its own
+in the same way as it would with unity builds disabled.
+
+This property helps with "ODR (One definition rule)" problems where combining
+a particular source file with others might lead to build errors or other
+unintended side effects.

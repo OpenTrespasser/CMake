@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eac58e37baf28041d24951dee98ad7170c286d137740e8651c9dc6c729e04f95
-size 376
+CMAKE_ARCHIVE_OUTPUT_DIRECTORY_<CONFIG>
+---------------------------------------
+
+Where to put all the :ref:`ARCHIVE <Archive Output Artifacts>`
+target files when built for a specific configuration.
+
+This variable is used to initialize the
+:prop_tgt:`ARCHIVE_OUTPUT_DIRECTORY_<CONFIG>` property on all the targets.
+See that target property for additional information.

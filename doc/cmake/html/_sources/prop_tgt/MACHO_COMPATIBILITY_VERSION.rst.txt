@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:217aa8f4badd236502c471429c6e2586076646dd5e84dfd0705caeb40e99aa5f
-size 588
+MACHO_COMPATIBILITY_VERSION
+---------------------------
+
+What compatibility version number is this target for Mach-O binaries.
+
+For shared libraries on Mach-O systems (e.g. macOS, iOS)
+the ``MACHO_COMPATIBILITY_VERSION`` property correspond to
+``compatibility version`` and :prop_tgt:`MACHO_CURRENT_VERSION` to
+``current version``.
+See the :prop_tgt:`FRAMEWORK` target property for an example.
+
+Versions of Mach-O binaries may be checked with the ``otool -L <binary>``
+command.  If ``MACHO_COMPATIBILITY_VERSION`` is not set, the value of
+the :prop_tgt:`SOVERSION` property will be used.

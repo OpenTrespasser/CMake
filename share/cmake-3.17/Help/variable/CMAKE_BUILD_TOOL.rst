@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:94330ee307af90478bee7546faad09eb86f58e449ae9ec4e844f029fef90f6c1
-size 185
+CMAKE_BUILD_TOOL
+----------------
+
+This variable exists only for backwards compatibility.
+It contains the same value as :variable:`CMAKE_MAKE_PROGRAM`.
+Use that variable instead.

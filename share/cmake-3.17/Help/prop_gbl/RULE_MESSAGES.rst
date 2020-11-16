@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:80d7bf67dbb1b0b5a79fa64123ac044509d9bef6c0baf17b8e34db5c7bbe023a
-size 618
+RULE_MESSAGES
+-------------
+
+Specify whether to report a message for each make rule.
+
+This property specifies whether Makefile generators should add a
+progress message describing what each build rule does.  If the
+property is not set the default is ON.  Set the property to OFF to
+disable granular messages and report only as each target completes.
+This is intended to allow scripted builds to avoid the build time cost
+of detailed reports.  If a :variable:`CMAKE_RULE_MESSAGES` cache entry exists
+its value initializes the value of this property.  Non-Makefile
+generators currently ignore this property.

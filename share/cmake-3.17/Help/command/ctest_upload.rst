@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:03bedc8343389d84518cd3f54ba048479a5c60c16ee4110957be451345907f9e
-size 631
+ctest_upload
+------------
+
+Upload files to a dashboard server as a :ref:`Dashboard Client`.
+
+::
+
+  ctest_upload(FILES <file>... [QUIET] [CAPTURE_CMAKE_ERROR <result-var>])
+
+The options are:
+
+``FILES <file>...``
+  Specify a list of files to be sent along with the build results to the
+  dashboard server.
+
+``QUIET``
+  Suppress any CTest-specific non-error output that would have been
+  printed to the console otherwise.
+
+``CAPTURE_CMAKE_ERROR <result-var>``
+  Store in the ``<result-var>`` variable -1 if there are any errors running
+  the command and prevent ctest from returning non-zero if an error occurs.

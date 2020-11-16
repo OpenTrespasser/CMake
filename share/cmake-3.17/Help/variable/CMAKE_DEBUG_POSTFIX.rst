@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e9902f0daf1d05797d627a8ead1ea9b96237dcc53d4fc2dc41cc71364e5217dc
-size 225
+CMAKE_DEBUG_POSTFIX
+-------------------
+
+See variable :variable:`CMAKE_<CONFIG>_POSTFIX`.
+
+This variable is a special case of the more-general
+:variable:`CMAKE_<CONFIG>_POSTFIX` variable for the `DEBUG` configuration.

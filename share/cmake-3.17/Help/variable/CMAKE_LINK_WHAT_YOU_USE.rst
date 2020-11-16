@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:606040fbc522d4a1bfcd1aa901b7c868e2ddc70680acede81022106423506944
-size 212
+CMAKE_LINK_WHAT_YOU_USE
+---------------------------------
+
+Default value for :prop_tgt:`LINK_WHAT_YOU_USE` target property.
+This variable is used to initialize the property on each target as it is
+created.

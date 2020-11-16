@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6ab3dff235e725af0f7a0c537d11b7368183b49777c02d19508f35aa331eae5b
-size 747
+# ARMCC Toolchain
+set(_compiler_id_pp_test "defined(__ARMCC_VERSION) && !defined(__clang__)")
+
+set(_compiler_id_version_compute "
+#if __ARMCC_VERSION >= 1000000
+  /* __ARMCC_VERSION = VRRPPPP */
+  # define @PREFIX@COMPILER_VERSION_MAJOR @MACRO_DEC@(__ARMCC_VERSION/1000000)
+  # define @PREFIX@COMPILER_VERSION_MINOR @MACRO_DEC@(__ARMCC_VERSION/10000 % 100)
+  # define @PREFIX@COMPILER_VERSION_PATCH @MACRO_DEC@(__ARMCC_VERSION     % 10000)
+#else
+  /* __ARMCC_VERSION = VRPPPP */
+  # define @PREFIX@COMPILER_VERSION_MAJOR @MACRO_DEC@(__ARMCC_VERSION/100000)
+  # define @PREFIX@COMPILER_VERSION_MINOR @MACRO_DEC@(__ARMCC_VERSION/10000 % 10)
+  # define @PREFIX@COMPILER_VERSION_PATCH @MACRO_DEC@(__ARMCC_VERSION    % 10000)
+#endif
+")

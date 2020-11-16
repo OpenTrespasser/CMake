@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:44f52a440e1f75618d9f92dac9b2b5545bdafd54a61c9c51325a363000e1da90
-size 377
+CMAKE_<LANG>_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES
+------------------------------------------------
+
+Implicit linker framework search path detected for language ``<LANG>``.
+
+These paths are implicit linker framework search directories for the
+compiler's language.  CMake automatically detects these directories
+for each language and reports the results in this variable.

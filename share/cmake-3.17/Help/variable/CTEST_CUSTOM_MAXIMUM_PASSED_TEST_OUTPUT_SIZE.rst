@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a23c9c284d271f40b63821f217233499a289dc7e0c9074dc9c4b7b091dfcc512
-size 294
+CTEST_CUSTOM_MAXIMUM_PASSED_TEST_OUTPUT_SIZE
+--------------------------------------------
+
+When saving a passing test's output, this is the maximum size, in bytes, that
+will be collected by the :command:`ctest_test` command. Defaults to 1024
+(1 KiB).
+
+.. include:: CTEST_CUSTOM_XXX.txt

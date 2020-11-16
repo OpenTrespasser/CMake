@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0fa5c004c5b24398f066ee5ecb3004b167f41dd49ed4fb32d5a61c257b85cec0
-size 783
+CMP0086
+-------
+
+:module:`UseSWIG` honors ``SWIG_MODULE_NAME`` via ``-module`` flag.
+
+Starting with CMake 3.14, :module:`UseSWIG` passes option
+``-module <module_name>`` to ``SWIG`` compiler if the file property
+``SWIG_MODULE_NAME`` is specified. This policy provides compatibility with
+projects that expect the legacy behavior.
+
+The ``OLD`` behavior for this policy is to never pass ``-module`` option.
+The ``NEW`` behavior is to pass ``-module`` option to ``SWIG`` compiler if
+``SWIG_MODULE_NAME`` is specified.
+
+This policy was introduced in CMake version 3.14.  CMake version
+|release| warns when the policy is not set and uses ``OLD`` behavior.
+Use the :command:`cmake_policy` command to set it to ``OLD`` or ``NEW``
+explicitly.
+
+.. include:: DEPRECATED.txt

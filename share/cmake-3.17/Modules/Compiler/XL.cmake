@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cbaebf0969b48dafd2f50355b52294a775ff7ed86e99fa2a2aaf0981725ae8f8
-size 1391
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+
+# This module is shared by multiple languages; use include blocker.
+if(__COMPILER_XL)
+  return()
+endif()
+set(__COMPILER_XL 1)
+
+include(Compiler/CMakeCommonCompilerMacros)
+
+macro(__compiler_xl lang)
+  # Feature flags.
+  set(CMAKE_${lang}_VERBOSE_FLAG "-V")
+  set(CMAKE_${lang}_COMPILE_OPTIONS_PIC "-qpic")
+  set(CMAKE_${lang}_COMPILE_OPTIONS_PIE "-qpic")
+  set(CMAKE_${lang}_RESPONSE_FILE_FLAG "-qoptfile=")
+  set(CMAKE_${lang}_RESPONSE_FILE_LINK_FLAG "-qoptfile=")
+
+  set(CMAKE_SHARED_LIBRARY_CREATE_${lang}_FLAGS "-qmkshrobj")
+
+  set(CMAKE_${lang}_LINKER_WRAPPER_FLAG "-Wl,")
+  set(CMAKE_${lang}_LINKER_WRAPPER_FLAG_SEP ",")
+
+  string(APPEND CMAKE_${lang}_FLAGS_DEBUG_INIT " -g")
+  string(APPEND CMAKE_${lang}_FLAGS_RELEASE_INIT " -O")
+  string(APPEND CMAKE_${lang}_FLAGS_MINSIZEREL_INIT " -O")
+  string(APPEND CMAKE_${lang}_FLAGS_RELWITHDEBINFO_INIT " -g")
+  set(CMAKE_${lang}_CREATE_PREPROCESSED_SOURCE "<CMAKE_${lang}_COMPILER> <DEFINES> <INCLUDES> <FLAGS> -E <SOURCE> > <PREPROCESSED_SOURCE>")
+  set(CMAKE_${lang}_CREATE_ASSEMBLY_SOURCE     "<CMAKE_${lang}_COMPILER> <DEFINES> <INCLUDES> <FLAGS> -S <SOURCE> -o <ASSEMBLY_SOURCE>")
+
+  set(CMAKE_DEPFILE_FLAGS_${lang} "-MF <DEPFILE> -qmakedep=gcc")
+endmacro()

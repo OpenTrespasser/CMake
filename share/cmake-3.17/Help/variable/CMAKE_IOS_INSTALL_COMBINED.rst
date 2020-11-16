@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d24bd373bff15c636fee6fda17623c500efc073bf639499cd0c1f38ffd899147
-size 283
+CMAKE_IOS_INSTALL_COMBINED
+--------------------------
+
+Default value for :prop_tgt:`IOS_INSTALL_COMBINED` of targets.
+
+This variable is used to initialize the :prop_tgt:`IOS_INSTALL_COMBINED`
+property on all the targets.  See that target property for additional
+information.

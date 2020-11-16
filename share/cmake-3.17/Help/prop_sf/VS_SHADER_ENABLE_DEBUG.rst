@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:49a7a74bc1f90c50183ec27ef3a131f01db3af29842e2b0ef72a33a5f4d702e9
-size 272
+VS_SHADER_ENABLE_DEBUG
+----------------------
+
+Enable debugging information for an ``.hlsl`` source file.  This adds the
+``-Zi`` flag to the command line for the FxCompiler tool.  Specify the value
+``true`` to generate debugging information for the compiled shader.

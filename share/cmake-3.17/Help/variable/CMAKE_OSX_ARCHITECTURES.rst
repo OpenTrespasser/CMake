@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:47a755ce1b8d4af1d649e3189e24cce3553aa16ef5c25cdf9079ac700744f564
-size 312
+CMAKE_OSX_ARCHITECTURES
+-----------------------
+
+Target specific architectures for macOS and iOS.
+
+This variable is used to initialize the :prop_tgt:`OSX_ARCHITECTURES`
+property on each target as it is created.  See that target property
+for additional information.
+
+.. include:: CMAKE_OSX_VARIABLE.txt

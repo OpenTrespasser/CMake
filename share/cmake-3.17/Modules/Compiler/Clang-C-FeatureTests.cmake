@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:867d384df291ba24119f99723675f360310662a30a007384e115933e9fc37e2e
-size 571
+
+set(_cmake_oldestSupported "((__clang_major__ * 100) + __clang_minor__) >= 304")
+
+set(Clang_C11 "${_cmake_oldestSupported} && defined(__STDC_VERSION__) && __STDC_VERSION__ >= 201112L")
+set(_cmake_feature_test_c_static_assert "${Clang_C11}")
+set(Clang_C99 "${_cmake_oldestSupported} && defined(__STDC_VERSION__) && __STDC_VERSION__ >= 199901L")
+set(_cmake_feature_test_c_restrict "${Clang_C99}")
+set(_cmake_feature_test_c_variadic_macros "${Clang_C99}")
+
+set(Clang_C90 "${_cmake_oldestSupported}")
+set(_cmake_feature_test_c_function_prototypes "${Clang_C90}")

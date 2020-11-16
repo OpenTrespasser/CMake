@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:56554750a6cd968d3f29e74cff9aed5b6f5b4f0a038cd3bdefcbab4c59e2ba6e
-size 321
+CMP0029
+-------
+
+The :command:`subdir_depends` command should not be called.
+
+The implementation of this command has been empty since December 2001
+but was kept in CMake for compatibility for a long time.
+
+.. |disallowed_version| replace:: 3.0
+.. include:: DISALLOWED_COMMAND.txt
+
+.. include:: DEPRECATED.txt

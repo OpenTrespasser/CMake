@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:162aca1cfc0043b0cba91f47d5544724eb8ebc8aa4b902f9f6b02ed38b7eea28
-size 750
+return
+------
+
+Return from a file, directory or function.
+
+.. code-block:: cmake
+
+  return()
+
+Returns from a file, directory or function.  When this command is
+encountered in an included file (via :command:`include` or
+:command:`find_package`), it causes processing of the current file to stop
+and control is returned to the including file.  If it is encountered in a
+file which is not included by another file, e.g.  a ``CMakeLists.txt``,
+control is returned to the parent directory if there is one.  If return is
+called in a function, control is returned to the caller of the function.
+
+Note that a :command:`macro <macro>`, unlike a :command:`function <function>`,
+is expanded in place and therefore cannot handle ``return()``.

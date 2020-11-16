@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:048d5438005c1cde6dfe25ed55807f6ce6f32cdba900d4064440cd77748bbe93
-size 249
+CMAKE_<LANG>_CPPLINT
+--------------------
+
+Default value for :prop_tgt:`<LANG>_CPPLINT` target property. This variable
+is used to initialize the property on each target as it is created.  This
+is done only when ``<LANG>`` is ``C`` or ``CXX``.

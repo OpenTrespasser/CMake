@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d0fe8c677fb4792b1324729876f4a29c3ed3643b260ce241c7098ed66672a1c7
-size 557
+string(APPEND CMAKE_Fortran_FLAGS_INIT " ")
+string(APPEND CMAKE_Fortran_FLAGS_DEBUG_INIT " -g")
+string(APPEND CMAKE_Fortran_FLAGS_MINSIZEREL_INIT " -Os")
+string(APPEND CMAKE_Fortran_FLAGS_RELEASE_INIT " -O3")
+string(APPEND CMAKE_Fortran_FLAGS_RELWITHDEBINFO_INIT " -O2 -g")
+set(CMAKE_Fortran_MODDIR_FLAG "-fmod=")
+set(CMAKE_Fortran_VERBOSE_FLAG "-v")
+set(CMAKE_Fortran_FORMAT_FIXED_FLAG "-ffixed-form")
+set(CMAKE_Fortran_FORMAT_FREE_FLAG "-ffree-form")
+set(CMAKE_Fortran_LINKER_WRAPPER_FLAG "-Wl,")
+set(CMAKE_Fortran_LINKER_WRAPPER_FLAG_SEP ",")

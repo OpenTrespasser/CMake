@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:904d0f5f058e218ca84f5a8071b45f08c1c7f01e31c8c49a5e8bc9d565ebd577
-size 443
+FIND_LIBRARY_USE_LIB64_PATHS
+----------------------------
+
+Whether :command:`find_library` should automatically search lib64
+directories.
+
+FIND_LIBRARY_USE_LIB64_PATHS is a boolean specifying whether the
+:command:`find_library` command should automatically search the lib64
+variant of directories called lib in the search path when building
+64-bit binaries.
+
+See also the :variable:`CMAKE_FIND_LIBRARY_CUSTOM_LIB_SUFFIX` variable.

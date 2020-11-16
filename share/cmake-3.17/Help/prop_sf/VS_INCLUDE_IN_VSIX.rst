@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7b700711f37704499b38cbf718847d7d9044f7667edf490bd79db11ea7dbf1cc
-size 235
+VS_INCLUDE_IN_VSIX
+------------------
+
+Boolean property to specify if the file should be included within a
+VSIX (Visual Studio Integration Extension) extension package.
+This is needed for development of Visual Studio extensions.

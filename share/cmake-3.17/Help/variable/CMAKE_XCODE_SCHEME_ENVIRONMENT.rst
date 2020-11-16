@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:549b58703a55cc3cf4f86deca139ba67e007dd1618c5baa65b578261201e209e
-size 546
+CMAKE_XCODE_SCHEME_ENVIRONMENT
+------------------------------
+
+Specify environment variables that should be added to the Arguments
+section of the generated Xcode scheme.
+
+If set to a list of environment variables and values of the form
+``MYVAR=value`` those environment variables will be added to the
+scheme.
+
+This variable initializes the :prop_tgt:`XCODE_SCHEME_ENVIRONMENT`
+property on all targets.
+
+Please refer to the :prop_tgt:`XCODE_GENERATE_SCHEME` target property
+documentation to see all Xcode schema related properties.

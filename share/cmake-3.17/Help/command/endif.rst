@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5498a8700f0fb3f107496bbe0a3630e038d71df6f5016fc0c0c96e86eb821850
-size 314
+endif
+-----
+
+Ends a list of commands in an if block.
+
+.. code-block:: cmake
+
+  endif([<condition>])
+
+See the :command:`if` command.
+
+The optional ``<condition>`` argument is supported for backward compatibility
+only. If used it must be a verbatim repeat of the argument of the opening
+``if`` clause.

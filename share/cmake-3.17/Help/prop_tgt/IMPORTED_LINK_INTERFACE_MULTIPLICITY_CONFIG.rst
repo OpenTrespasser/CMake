@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cdcd21206f7519c49796b762140ff8183fe2543585fbe0f75a96c76d0591d998
-size 273
+IMPORTED_LINK_INTERFACE_MULTIPLICITY_<CONFIG>
+---------------------------------------------
+
+<CONFIG>-specific version of :prop_tgt:`IMPORTED_LINK_INTERFACE_MULTIPLICITY`.
+
+If set, this property completely overrides the generic property for
+the named configuration.

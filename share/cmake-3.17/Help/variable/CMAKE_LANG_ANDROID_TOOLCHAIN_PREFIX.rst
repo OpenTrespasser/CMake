@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0e40c48eb110ea0072cc46f544b64d16a4e24dbdb4e140c9f549e93083ed123d
-size 463
+CMAKE_<LANG>_ANDROID_TOOLCHAIN_PREFIX
+-------------------------------------
+
+When :ref:`Cross Compiling for Android` this variable contains the absolute
+path prefixing the toolchain GNU compiler and its binutils.
+
+See also :variable:`CMAKE_<LANG>_ANDROID_TOOLCHAIN_SUFFIX`
+and :variable:`CMAKE_<LANG>_ANDROID_TOOLCHAIN_MACHINE`.
+
+For example, the path to the linker is::
+
+  ${CMAKE_CXX_ANDROID_TOOLCHAIN_PREFIX}ld${CMAKE_CXX_ANDROID_TOOLCHAIN_SUFFIX}

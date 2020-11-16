@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8e1deaea8cad3f5bb88d7b99343fed8e552f7f0f252158231202df953d4dc190
-size 143
+#include <${CHECK_INCLUDE_FILE_VAR}>
+
+#ifdef __CLASSIC_C__
+int main()
+{
+  return 0;
+}
+#else
+int main(void)
+{
+  return 0;
+}
+#endif

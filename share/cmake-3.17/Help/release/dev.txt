@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4f68d5cda37605ea072ef8a55fdafd606449dccc284883f35f3908cfc22ef26e
-size 411
+..
+  This file should be included by the adjacent "index.rst"
+  in development versions but not in release versions.
+
+Changes Since Release
+=====================
+
+The following noteworthy changes have been made in this development
+version since the preceding release but have not yet been consolidated
+into notes for a specific release version:
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   dev/*

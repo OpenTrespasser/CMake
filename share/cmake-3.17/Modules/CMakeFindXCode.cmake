@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:988d04f7b799e7954c6db3a0ff1c5678789a0d0f1eca142774021a58054c64cd
-size 256
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+
+# Empty placeholder for input dependencies in existing
+# build trees produced by older versions of CMake.

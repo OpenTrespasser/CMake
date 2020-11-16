@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d835260fd65dabbb0007d2e2fc663b58e900f85d1f4f87cb09a0c637f23cfc5e
-size 664
+CMAKE_SKIP_INSTALL_RPATH
+------------------------
+
+Do not include RPATHs in the install tree.
+
+Normally CMake uses the build tree for the RPATH when building
+executables etc on systems that use RPATH.  When the software is
+installed the executables etc are relinked by CMake to have the
+install RPATH.  If this variable is set to true then the software is
+always installed without RPATH, even if RPATH is enabled when
+building.  This can be useful for example to allow running tests from
+the build directory with RPATH enabled before the installation step.
+To omit RPATH in both the build and install steps, use
+:variable:`CMAKE_SKIP_RPATH` instead.

@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aceeb740058ac7441d050d1dd10035abe3650c566d9df7e470bd8797277e303e
-size 404
+CMAKE_XCODE_SCHEME_WORKING_DIRECTORY
+------------------------------------
+
+Specify the ``Working Directory`` a of the `Run` and `Profile`
+action in the generated Xcode scheme.
+
+This variable initializes the
+:prop_tgt:`XCODE_SCHEME_WORKING_DIRECTORY`
+property on all targets.
+
+Please refer to the :prop_tgt:`XCODE_GENERATE_SCHEME` target property
+documentation to see all Xcode schema related properties.

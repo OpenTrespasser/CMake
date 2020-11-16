@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fdccfc4e8557748f07d96497a363fb65e3e773530ad01498d6aa36f2a5db5982
-size 494
+enable_testing
+--------------
+
+Enable testing for current directory and below.
+
+.. code-block:: cmake
+
+  enable_testing()
+
+Enables testing for this directory and below.
+
+This command should be in the source directory root
+because ctest expects to find a test file in the build
+directory root.
+
+This command is automatically invoked when the :module:`CTest`
+module is included, except if the ``BUILD_TESTING`` option is
+turned off.
+
+See also the :command:`add_test` command.

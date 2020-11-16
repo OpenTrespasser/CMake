@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:12bd4c6ceaf45deb10f4fab819e499c284d862a4bee82013fc17f9ed25c530ab
-size 394
+CMAKE_OBJCXX_STANDARD
+---------------------
+
+Default value for :prop_tgt:`OBJCXX_STANDARD` property of targets.
+
+This variable is used to initialize the :prop_tgt:`OBJCXX_STANDARD`
+property on all targets.  See that target property for additional
+information.
+
+See the :manual:`cmake-compile-features(7)` manual for information on
+compile features and a list of supported compilers.

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:33a3058fc8f0238ec6e57fb0aa734ebdf2a5bf16134d277e24974c8173ed3023
-size 218
+CMAKE_<LANG>_COMPILE_OBJECT
+---------------------------
+
+Rule variable to compile a single object file.
+
+This is a rule variable that tells CMake how to compile a single
+object file for the language ``<LANG>``.

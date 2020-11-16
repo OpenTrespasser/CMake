@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:810fba9d3fde746ac6a4c695e2204a5fba724a9c2141f546f9c2e9109b8a0293
-size 188
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+
+__BlueGeneP_set_dynamic_flags(GNU CXX)

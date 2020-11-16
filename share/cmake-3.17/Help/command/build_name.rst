@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fadc6876f0a3dca99e90d6ee6885cc89823cb44b3c0811e77af4c91ecc805d59
-size 426
+build_name
+----------
+
+Disallowed since version 3.0.  See CMake Policy :policy:`CMP0036`.
+
+Use ``${CMAKE_SYSTEM}`` and ``${CMAKE_CXX_COMPILER}`` instead.
+
+::
+
+  build_name(variable)
+
+Sets the specified variable to a string representing the platform and
+compiler settings.  These values are now available through the
+:variable:`CMAKE_SYSTEM` and
+:variable:`CMAKE_CXX_COMPILER <CMAKE_<LANG>_COMPILER>` variables.

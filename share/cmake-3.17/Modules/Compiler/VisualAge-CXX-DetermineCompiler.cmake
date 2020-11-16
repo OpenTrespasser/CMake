@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6522d060db4fc99e2ab690400191e9177c0e2e7cf88c05b94889add18c295491
-size 183
+
+set(_compiler_id_pp_test "defined(__IBMCPP__) && !defined(__COMPILER_VER__) && __IBMCPP__ < 800")
+
+include("${CMAKE_CURRENT_LIST_DIR}/IBMCPP-CXX-DetermineVersionInternal.cmake")

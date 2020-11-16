@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fdcd85c9a0a9e69515b0ef738195fcf54761e4d9a2b29f5879be7dba0ef328df
-size 257
+RUNTIME_OUTPUT_NAME_<CONFIG>
+----------------------------
+
+Per-configuration output name for
+:ref:`RUNTIME <Runtime Output Artifacts>` target files.
+
+This is the configuration-specific version of the
+:prop_tgt:`RUNTIME_OUTPUT_NAME` target property.

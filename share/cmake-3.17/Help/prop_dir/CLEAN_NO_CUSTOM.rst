@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f6dbae780c99a4b7c92cddba6007960c6c7447e8f71612172dc61815bba378c4
-size 264
+CLEAN_NO_CUSTOM
+---------------
+
+Set to true to tell :ref:`Makefile Generators` not to remove the outputs of
+custom commands for this directory during the ``make clean`` operation.
+This is ignored on other generators because it is not possible to implement.

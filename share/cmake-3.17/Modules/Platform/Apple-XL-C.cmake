@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b72027df79e9c01c8d21444f38bccb9abddc373ed70d868e2c08ba3378437d01
-size 276
+set(CMAKE_SHARED_MODULE_CREATE_C_FLAGS "-bundle")
+
+# Enable shared library versioning.
+set(CMAKE_SHARED_LIBRARY_SONAME_C_FLAG "-Wl,-install_name")
+
+# -qhalt=e       = Halt on error messages (rather than just severe errors)
+string(APPEND CMAKE_C_FLAGS_INIT " -qhalt=e")

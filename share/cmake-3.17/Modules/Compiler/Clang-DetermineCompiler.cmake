@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1c2bdaea4494ec6ee5b8ceaea1b091fa143c5d6e4274aa8c2d542dee17c67d0c
-size 128
+
+set(_compiler_id_pp_test "defined(__clang__)")
+
+include("${CMAKE_CURRENT_LIST_DIR}/Clang-DetermineCompilerInternal.cmake")

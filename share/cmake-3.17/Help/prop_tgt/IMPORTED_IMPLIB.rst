@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:af1f601d07285fbdab4e76a428a7e54f0683068e39b0bb47b4047129ba0c47e3
-size 334
+IMPORTED_IMPLIB
+---------------
+
+Full path to the import library for an ``IMPORTED`` target.
+
+Set this to the location of the ``.lib`` part of a Windows DLL, or on
+AIX set it to an import file created for executables that export symbols
+(see the :prop_tgt:`ENABLE_EXPORTS` target property).
+Ignored for non-imported targets.

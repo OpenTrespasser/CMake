@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ffd1e7562e8c17844842a145480013960b61fc4d8ad56bc133fe3083930d8032
-size 667
+STATIC_LIBRARY_FLAGS
+--------------------
+
+Archiver (or MSVC librarian) flags for a static library target.
+Targets that are shared libraries, modules, or executables need to use
+the :prop_tgt:`LINK_OPTIONS` or :prop_tgt:`LINK_FLAGS` target properties.
+
+The ``STATIC_LIBRARY_FLAGS`` property, managed as a string, can be used to add
+extra flags to the link step of a static library target.
+:prop_tgt:`STATIC_LIBRARY_FLAGS_<CONFIG>` will add to the configuration
+``<CONFIG>``, for example, ``DEBUG``, ``RELEASE``, ``MINSIZEREL``,
+``RELWITHDEBINFO``, ...
+
+.. note::
+
+  This property has been superseded by :prop_tgt:`STATIC_LIBRARY_OPTIONS`
+  property.

@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c22f50791662bee4ad9bfa1e8b5ec64e7739dec69468b634bc51614c21a89679
-size 218
+IMPORTED_LINK_INTERFACE_MULTIPLICITY
+------------------------------------
+
+Repetition count for cycles of ``IMPORTED`` static libraries.
+
+This is :prop_tgt:`LINK_INTERFACE_MULTIPLICITY` for ``IMPORTED`` targets.

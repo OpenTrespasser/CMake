@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:11a27ffdcbb1d897fdf99429c6255cfdddd3e928d0aa0328b4db75f8e756848b
-size 244
+VS_XAML_TYPE
+------------
+
+Mark a Extensible Application Markup Language (XAML) source file
+as a different type than the default ``Page``.
+The most common usage would be to set the default ``App.xaml`` file as
+``ApplicationDefinition``.

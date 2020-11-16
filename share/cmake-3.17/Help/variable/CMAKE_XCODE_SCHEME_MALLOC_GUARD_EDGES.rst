@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:35279ade03afbf98f76d088139f5ac25b4251f6c59306c8085e4628baeb2a4cb
-size 417
+CMAKE_XCODE_SCHEME_MALLOC_GUARD_EDGES
+-------------------------------------
+
+Whether to enable ``Malloc Guard Edges``
+in the Diagnostics section of the generated Xcode scheme.
+
+This variable initializes the
+:prop_tgt:`XCODE_SCHEME_MALLOC_GUARD_EDGES`
+property on all targets.
+
+Please refer to the :prop_tgt:`XCODE_GENERATE_SCHEME` target property
+documentation to see all Xcode schema related properties.

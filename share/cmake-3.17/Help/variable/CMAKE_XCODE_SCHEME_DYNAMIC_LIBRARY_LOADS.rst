@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ea8e0647343c14d5a52923cbf98dd44beca2ffd08abd19a2ec26b4be9f4d51c8
-size 429
+CMAKE_XCODE_SCHEME_DYNAMIC_LIBRARY_LOADS
+----------------------------------------
+
+Whether to enable ``Dynamic Library Loads``
+in the Diagnostics section of the generated Xcode scheme.
+
+This variable initializes the
+:prop_tgt:`XCODE_SCHEME_DYNAMIC_LIBRARY_LOADS`
+property on all targets.
+
+Please refer to the :prop_tgt:`XCODE_GENERATE_SCHEME` target property
+documentation to see all Xcode schema related properties.

@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b510b4d96c7f89333b9f6022066ce166b27499ab49f2720ade482bfe2e3dce2c
-size 208
+include(Platform/Apple-Clang-C)
+if(NOT CMAKE_C_COMPILER_VERSION VERSION_LESS 4.2)
+  set(CMAKE_C_SYSTEM_FRAMEWORK_SEARCH_FLAG "-iframework ")
+else()
+  unset(CMAKE_C_SYSTEM_FRAMEWORK_SEARCH_FLAG)
+endif()

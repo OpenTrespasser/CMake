@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:849fef07500e811c308d4ebf0dbc877f5f092c8c1b10ed0c068c4f7474f87615
-size 249
+Visual Studio 6
+---------------
+
+Removed.  This once generated Visual Studio 6 project files, but the
+generator has been removed since CMake 3.6.  It is still possible to
+build with VS 6 tools using the :generator:`NMake Makefiles` generator.

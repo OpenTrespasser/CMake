@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9bb46b26c8a7a5bcd8fcf165ac6dabbec01c58bdc685049117c2e5bc88bf2633
-size 242
+LIBRARY_OUTPUT_NAME
+-------------------
+
+.. |XXX| replace:: :ref:`LIBRARY <Library Output Artifacts>`
+.. |xxx| replace:: library
+.. include:: XXX_OUTPUT_NAME.txt
+
+See also the :prop_tgt:`LIBRARY_OUTPUT_NAME_<CONFIG>` target property.

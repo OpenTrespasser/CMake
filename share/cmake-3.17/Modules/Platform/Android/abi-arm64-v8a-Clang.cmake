@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4306f581c9cd85039500a9efbd956432353f423e43e9d3189bb09a23d2f321f1
-size 279
+# <ndk>/build/core/toolchains/aarch64-linux-android-clang/setup.mk
+set(_ANDROID_ABI_CLANG_TARGET "aarch64-none-linux-android")
+
+# Suppress -Wl,-z,nocopyreloc flag on arm64-v8a
+set(_ANDROID_ABI_INIT_EXE_LDFLAGS_NO_nocopyreloc 1)
+
+include(Platform/Android/abi-common-Clang)

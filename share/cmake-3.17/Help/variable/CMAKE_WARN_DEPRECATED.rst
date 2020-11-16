@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bd8b6f2730b82b32bc05ecc9d137b92889a179246fe0e1d15c90296a05ca8b18
-size 401
+CMAKE_WARN_DEPRECATED
+---------------------
+
+Whether to issue warnings for deprecated functionality.
+
+If not ``FALSE``, use of deprecated functionality will issue warnings.
+If this variable is not set, CMake behaves as if it were set to ``TRUE``.
+
+When running :manual:`cmake(1)`, this option can be enabled with the
+``-Wdeprecated`` option, or disabled with the ``-Wno-deprecated`` option.

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7023c671cd5d2cd6c877cd83807918b7a6af98b27582494a34f36d838fc77ba6
-size 441
+CMAKE_SYSTEM_INCLUDE_PATH
+-------------------------
+
+:ref:`Semicolon-separated list <CMake Language Lists>` of directories specifying a search path
+for the :command:`find_file` and :command:`find_path` commands.  By default
+this contains the standard directories for the current system.  It is *not*
+intended to be modified by the project; use :variable:`CMAKE_INCLUDE_PATH` for
+this.  See also :variable:`CMAKE_SYSTEM_PREFIX_PATH`.

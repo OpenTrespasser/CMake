@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9b3a99258188711f80ded342cbf42e0d0f959d3a1ab6b6a5f369ba3398d3675f
-size 354
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+include(Platform/Apple-Intel)
+__apple_compiler_intel(Fortran)
+
+set(CMAKE_Fortran_OSX_COMPATIBILITY_VERSION_FLAG "-compatibility_version ")
+set(CMAKE_Fortran_OSX_CURRENT_VERSION_FLAG "-current_version ")

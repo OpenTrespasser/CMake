@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:30ac24578cc1ec05287eb8d2a8dd6ae770ea90bfa0a42c3826b4d7cf6e552185
-size 439
+RULE_LAUNCH_CUSTOM
+------------------
+
+Specify a launcher for custom rules.
+
+:ref:`Makefile Generators` and the :generator:`Ninja` generator prefix
+custom commands with the given launcher command line.
+This is intended to allow launchers to intercept build problems
+with high granularity.  Other generators ignore this property
+because their underlying build systems provide no hook to wrap
+individual commands with a launcher.

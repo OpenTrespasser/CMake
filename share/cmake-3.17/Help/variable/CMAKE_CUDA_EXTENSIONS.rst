@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d21862e05c9de40b0d61027d8c4767b97a02397562892c5c7e4d0a9104f49073
-size 394
+CMAKE_CUDA_EXTENSIONS
+---------------------
+
+Default value for :prop_tgt:`CUDA_EXTENSIONS` property of targets.
+
+This variable is used to initialize the :prop_tgt:`CUDA_EXTENSIONS`
+property on all targets.  See that target property for additional
+information.
+
+See the :manual:`cmake-compile-features(7)` manual for information on
+compile features and a list of supported compilers.

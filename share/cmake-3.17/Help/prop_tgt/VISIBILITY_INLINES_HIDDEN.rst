@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:709b4ba717beae8f3400ccfd6ef9b6845621aa0142d4536225f356be22422505
-size 578
+VISIBILITY_INLINES_HIDDEN
+-------------------------
+
+Whether to add a compile flag to hide symbols of inline functions
+
+The ``VISIBILITY_INLINES_HIDDEN`` property determines whether a flag for
+hiding symbols for inline functions, such as ``-fvisibility-inlines-hidden``,
+should be used when invoking the compiler.  This property affects compilation
+in sources of all types of targets (subject to policy :policy:`CMP0063`).
+
+This property is initialized by
+the value of the :variable:`CMAKE_VISIBILITY_INLINES_HIDDEN` variable if it
+is set when a target is created.

@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:135ad062de900d5c75fd7777c9678b5465477b91e745507e3d903fe07d5cd8aa
-size 571
+CMAKE_<LANG>_FLAGS
+------------------
+
+Flags for all build types.
+
+``<LANG>`` flags used regardless of the value of :variable:`CMAKE_BUILD_TYPE`.
+
+This is initialized for each language from environment variables:
+
+* ``CMAKE_C_FLAGS``:
+  Initialized by the :envvar:`CFLAGS` environment variable.
+* ``CMAKE_CXX_FLAGS``:
+  Initialized by the :envvar:`CXXFLAGS` environment variable.
+* ``CMAKE_CUDA_FLAGS``:
+  Initialized by the :envvar:`CUDAFLAGS` environment variable.
+* ``CMAKE_Fortran_FLAGS``:
+  Initialized by the :envvar:`FFLAGS` environment variable.

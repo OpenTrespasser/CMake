@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:37430fa94e0781bd576cc8214e5b1305251dfde77c21e42dedffccd328e03ea2
-size 320
+CMAKE_DEFAULT_CONFIGS
+---------------------
+
+Specifies a :ref:`semicolon-separated list <CMake Language Lists>` of configurations
+to build for a target in ``build.ninja`` if no ``:<Config>`` suffix is specified in
+the :generator:`Ninja Multi-Config` generator.
+See the generator's documentation for more details.

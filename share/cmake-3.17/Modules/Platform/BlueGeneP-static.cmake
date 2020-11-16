@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:879e8b414986a1c7d3b97db7c344c9b56aa972f52599621420ade921e907a80a
-size 326
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+
+include(Platform/BlueGeneP-base)
+set_property(GLOBAL PROPERTY TARGET_SUPPORTS_SHARED_LIBS FALSE)
+set(CMAKE_FIND_LIBRARY_PREFIXES "lib")
+set(CMAKE_FIND_LIBRARY_SUFFIXES ".a")

@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:97a2ac4c3180baee27ecdce106b9db3c90c11b74a4bf534c4ee4dbaae2b6816a
-size 422
+CMAKE_CUDA_STANDARD_REQUIRED
+----------------------------
+
+Default value for :prop_tgt:`CUDA_STANDARD_REQUIRED` property of targets.
+
+This variable is used to initialize the :prop_tgt:`CUDA_STANDARD_REQUIRED`
+property on all targets.  See that target property for additional
+information.
+
+See the :manual:`cmake-compile-features(7)` manual for information on
+compile features and a list of supported compilers.

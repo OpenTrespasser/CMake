@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dc1b97b11db6c54508bd65411ca49f14eba67d611fde03f66d285c664c4be965
-size 327
+TIMEOUT
+-------
+
+How many seconds to allow for this test.
+
+This property if set will limit a test to not take more than the
+specified number of seconds to run.  If it exceeds that the test
+process will be killed and ctest will move to the next test.  This
+setting takes precedence over :variable:`CTEST_TEST_TIMEOUT`.

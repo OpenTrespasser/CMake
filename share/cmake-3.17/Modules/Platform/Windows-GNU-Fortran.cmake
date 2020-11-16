@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0f3137b5ed153b276cafe6d36fe5b38409241ef8c8b1ddddd9860828ae03599b
-size 167
+include(Platform/Windows-GNU)
+__windows_compiler_gnu(Fortran)
+
+# gfortran on 64-bit MinGW defines __SIZEOF_POINTER__
+set(CMAKE_Fortran_SIZEOF_DATA_PTR_DEFAULT 4)

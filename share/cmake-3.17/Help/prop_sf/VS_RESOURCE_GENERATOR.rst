@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f9a097125a5e75043ab8cba11985c2a864c2ba2efa5256dbc93042cc4ef6ab49
-size 236
+VS_RESOURCE_GENERATOR
+---------------------
+
+This property allows to specify the resource generator to be used
+on this file. It defaults to ``PublicResXFileCodeGenerator`` if
+not set.
+
+This property only applies to C# projects.

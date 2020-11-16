@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:41a398f1ecbc3f140494e3dd3568b9739cf91d04ceef1d2122b5408565beeb51
-size 593
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+#[=======================================================================[.rst:
+CMakeParseArguments
+-------------------
+
+This module once implemented the :command:`cmake_parse_arguments` command
+that is now implemented natively by CMake.  It is now an empty placeholder
+for compatibility with projects that include it to get the command from
+CMake 3.4 and lower.
+#]=======================================================================]

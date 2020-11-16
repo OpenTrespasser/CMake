@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1f895d6b6de32cbc085d45786e83e7f9e3d4cb43fd9c970a623d957f6686ded6
-size 331
+
+set(_compiler_id_pp_test "defined(__HP_aCC)")
+
+set(_compiler_id_version_compute "
+  /* __HP_aCC = VVRRPP */
+# define @PREFIX@COMPILER_VERSION_MAJOR @MACRO_DEC@(__HP_aCC/10000)
+# define @PREFIX@COMPILER_VERSION_MINOR @MACRO_DEC@(__HP_aCC/100 % 100)
+# define @PREFIX@COMPILER_VERSION_PATCH @MACRO_DEC@(__HP_aCC     % 100)")

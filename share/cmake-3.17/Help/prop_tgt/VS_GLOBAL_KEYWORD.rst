@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ba76bc05e4c3cea6fce4f365ee1c0774ff13a3675a41807438db89ab610f0698
-size 427
+VS_GLOBAL_KEYWORD
+-----------------
+
+Visual Studio project keyword for VS 10 (2010) and newer.
+
+Sets the "keyword" attribute for a generated Visual Studio project.
+Defaults to "Win32Proj".  You may wish to override this value with
+"ManagedCProj", for example, in a Visual Studio managed C++ unit test
+project.
+
+Use the :prop_tgt:`VS_KEYWORD` target property to set the
+keyword for Visual Studio 9 (2008) and older.

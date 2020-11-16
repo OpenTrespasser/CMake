@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:44caa46100f92b859ccaa5b8f27521babc59a28bb88a207a16e3bc3c62c8cf15
-size 324
+PROJECT_HOMEPAGE_URL
+--------------------
+
+The homepage URL of the project.
+
+This is the homepage URL given to the most recently called :command:`project`
+command in the current directory scope or above.  To obtain the homepage URL
+of the top level project, see the :variable:`CMAKE_PROJECT_HOMEPAGE_URL`
+variable.

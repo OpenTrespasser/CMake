@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3d5d841c1d09d93805d3c31548c44a2aa40033e941f3db23496c837bd974272b
-size 518
+CPACK_PACKAGING_INSTALL_PREFIX
+------------------------------
+
+The prefix used in the built package.
+
+Each CPack generator has a default value (like ``/usr``).  This default
+value may be overwritten from the ``CMakeLists.txt`` or the :manual:`cpack(1)`
+command line by setting an alternative value.  Example:
+
+::
+
+  set(CPACK_PACKAGING_INSTALL_PREFIX "/opt")
+
+This is not the same purpose as :variable:`CMAKE_INSTALL_PREFIX` which is used
+when installing from the build tree without building a package.

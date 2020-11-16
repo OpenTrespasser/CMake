@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6f9d2cc77029f896bf72a32b157a2acde2a5ef862141b78d69cb4278b6ed73fb
-size 265
+CMAKE_EXECUTABLE_SUFFIX
+-----------------------
+
+The suffix for executables on this platform.
+
+The suffix to use for the end of an executable filename if any, ``.exe``
+on Windows.
+
+``CMAKE_EXECUTABLE_SUFFIX_<LANG>`` overrides this for language ``<LANG>``.

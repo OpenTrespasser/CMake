@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:de94bbb9a704010a4f0528498ed5830e941a2172604003bca5b7ca8208950874
-size 268
+Visual Studio 8 2005
+--------------------
+
+Removed.  This once generated Visual Studio 8 2005 project files, but
+the generator has been removed since CMake 3.12.  It is still possible to
+build with VS 2005 tools using the :generator:`NMake Makefiles` generator.

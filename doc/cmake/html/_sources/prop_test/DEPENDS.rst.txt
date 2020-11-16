@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c953697b335451e1402eb1bdf0f1e07c0d1936b7d0578260374091341d0d2403
-size 467
+DEPENDS
+-------
+
+Specifies that this test should only be run after the specified list of tests.
+
+Set this to a list of tests that must finish before this test is run. The
+results of those tests are not considered, the dependency relationship is
+purely for order of execution (i.e. it is really just a *run after*
+relationship). Consider using test fixtures with setup tests if a dependency
+with successful completion is required (see :prop_test:`FIXTURES_REQUIRED`).

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:600ac2028f2422e2e9006449e85479c939a56e167c4cbe871bc983d0b63a2955
-size 289
+ANDROID_JAR_DEPENDENCIES
+------------------------
+
+Set the Android property that specifies JAR dependencies.
+This is a string value property. This property is initialized
+by the value of the :variable:`CMAKE_ANDROID_JAR_DEPENDENCIES`
+variable if it is set when a target is created.

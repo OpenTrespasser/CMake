@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1a80d00cf29d708f6b26aaf03c10db50a37ddce93c87a1f9e7f9ce90a7bc6b7d
-size 740
+COMPILE_FLAGS
+-------------
+
+Additional flags to be added when compiling this source file.
+
+The ``COMPILE_FLAGS`` property, managed as a string, sets additional compiler
+flags used to build source files.  Use :prop_sf:`COMPILE_DEFINITIONS` to pass
+additional preprocessor definitions.
+
+Contents of ``COMPILE_FLAGS`` may use "generator expressions"
+with the syntax ``$<...>``.  See the :manual:`cmake-generator-expressions(7)`
+manual for available expressions.  However, :generator:`Xcode`
+does not support per-config per-source settings, so expressions
+that depend on the build configuration are not allowed with that
+generator.
+
+.. note::
+
+  This property has been superseded by the :prop_sf:`COMPILE_OPTIONS` property.

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:96ab2f092c51b8a5fe82972e2f783a636c5eb81cfb1206180f60bdb1a9820428
-size 343
+BUNDLE
+------
+
+This target is a ``CFBundle`` on the macOS.
+
+If a module library target has this property set to true it will be
+built as a ``CFBundle`` when built on the mac.  It will have the directory
+structure required for a ``CFBundle`` and will be suitable to be used for
+creating Browser Plugins or other application resources.

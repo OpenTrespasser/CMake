@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:64524abdd87fb9d8b7d42fb0f4e6226c81eec5f1608a6ba45d6023404637e5c7
-size 888
+OBJCXX_EXTENSIONS
+-----------------
+
+Boolean specifying whether compiler specific extensions are requested.
+
+This property specifies whether compiler specific extensions should be
+used.  For some compilers, this results in adding a flag such
+as ``-std=gnu++11`` instead of ``-std=c++11`` to the compile line.  This
+property is ``ON`` by default. The basic ObjC++ standard level is
+controlled by the :prop_tgt:`OBJCXX_STANDARD` target property.
+
+See the :manual:`cmake-compile-features(7)` manual for information on
+compile features and a list of supported compilers.
+
+If the property is not set, and the project has set the :prop_tgt:`CXX_EXTENSIONS`,
+the value of :prop_tgt:`CXX_EXTENSIONS` is set for :prop_tgt:`OBJCXX_EXTENSIONS`.
+
+This property is initialized by the value of
+the :variable:`CMAKE_OBJCXX_EXTENSIONS` variable if it is set when a target
+is created.

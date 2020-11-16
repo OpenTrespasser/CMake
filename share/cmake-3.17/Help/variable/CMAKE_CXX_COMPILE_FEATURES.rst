@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:526d31e6efcbf31ee102d02ee4088f1d009a08a85d7724903678cc77ad0de267
-size 411
+CMAKE_CXX_COMPILE_FEATURES
+--------------------------
+
+List of features known to the C++ compiler
+
+These features are known to be available for use with the C++ compiler. This
+list is a subset of the features listed in the
+:prop_gbl:`CMAKE_CXX_KNOWN_FEATURES` global property.
+
+See the :manual:`cmake-compile-features(7)` manual for information on
+compile features and a list of supported compilers.

@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:96125fd4fd3666f238a27a4e9ce399f6cb4642972f4f449a608b39bcc58dd2a8
-size 450
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.4">
+<dict>
+	<key>IFPkgDescriptionTitle</key>
+	<string>@CPACK_PACKAGE_NAME@</string>
+  <key>IFPkgDescriptionVersion</key>
+  <string>@CPACK_PACKAGE_VERSION@</string>
+  <key>IFPkgDescriptionDescription</key>
+  <string>@CPACK_PACKAGE_DESCRIPTION@</string>
+</dict>
+</plist>

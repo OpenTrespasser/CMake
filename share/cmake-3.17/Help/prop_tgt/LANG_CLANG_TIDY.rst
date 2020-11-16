@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7fc8c8113dfdb75b5df9b26b73b88d8c0938744820c401bbd5044e73eb1b30da
-size 543
+<LANG>_CLANG_TIDY
+-----------------
+
+This property is implemented only when ``<LANG>`` is ``C`` or ``CXX``.
+
+Specify a :ref:`semicolon-separated list <CMake Language Lists>` containing a command
+line for the ``clang-tidy`` tool.  The :ref:`Makefile Generators`
+and the :generator:`Ninja` generator will run this tool along with the
+compiler and report a warning if the tool reports any problems.
+
+This property is initialized by the value of
+the :variable:`CMAKE_<LANG>_CLANG_TIDY` variable if it is set
+when a target is created.

@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0b465e8e1a609d9cb64176ed675cd6bb38de0985cae04f0cac3ab1fc4d4aeafe
-size 126
+CTEST_DROP_SITE
+---------------
+
+Specify the CTest ``DropSite`` setting
+in a :manual:`ctest(1)` dashboard client script.

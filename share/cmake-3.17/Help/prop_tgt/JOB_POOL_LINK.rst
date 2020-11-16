@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7de3f599114f504ba27aae4d69ceb1b92afbbb9d884938a1ec44c97b8d9a1bd8
-size 420
+JOB_POOL_LINK
+-------------
+
+Ninja only: Pool used for linking.
+
+The number of parallel link processes could be limited by defining
+pools with the global :prop_gbl:`JOB_POOLS`
+property and then specifying here the pool name.
+
+For instance:
+
+.. code-block:: cmake
+
+  set_property(TARGET myexe PROPERTY JOB_POOL_LINK two_jobs)
+
+This property is initialized by the value of :variable:`CMAKE_JOB_POOL_LINK`.

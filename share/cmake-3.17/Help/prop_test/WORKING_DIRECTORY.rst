@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1587170982c58956bcd4ef4f9f261e318e2139ceab87e1f001a58cae16076d79
-size 337
+WORKING_DIRECTORY
+-----------------
+
+The directory from which the test executable will be called.
+
+If this is not set, the test will be run with the working directory set to the
+binary directory associated with where the test was created (i.e. the
+:variable:`CMAKE_CURRENT_BINARY_DIR` for where :command:`add_test` was
+called).

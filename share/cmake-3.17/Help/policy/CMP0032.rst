@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9352546638723f287141f346e46099b6ef5b2cce4efc1e6e7b75c179857265c6
-size 543
+CMP0032
+-------
+
+The :command:`output_required_files` command should not be called.
+
+This command was added in June 2001 to expose the then-current CMake
+implicit dependency scanner.  CMake's real implicit dependency scanner
+has evolved since then but is not exposed through this command.  The
+scanning capabilities of this command are very limited and this
+functionality is better achieved through dedicated outside tools.
+
+.. |disallowed_version| replace:: 3.0
+.. include:: DISALLOWED_COMMAND.txt
+
+.. include:: DEPRECATED.txt

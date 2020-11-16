@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5f3ae96563ea59e2265450107cb9267d1b6e31c06a47bcb335d913bd55eb3149
-size 260
+include(Platform/Android/ndk-stl-c++)
+macro(__android_stl lang)
+  __android_stl_cxx(${lang} libc++_shared.so)
+  __android_stl_lib(${lang} "${CMAKE_ANDROID_NDK}/sources/cxx-stl/llvm-libc++/libs/${CMAKE_ANDROID_ARCH_ABI}/libandroid_support.a" 0)
+endmacro()

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fb91d5888dcb8d89e2021756ecac1a9694854dbf63b1dccdab9992f43a2bd192
-size 356
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+
+message(SEND_ERROR
+        "Modules/CheckSizeOf.cmake has been removed.  "
+        "Use Modules/CheckTypeSize.cmake instead.  This "
+        "compatibility check may be removed before the next release!")

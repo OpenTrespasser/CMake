@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2ff1c867a3f9a30f8561a486ea74f87d38e7711ed9aab6e0818bf05930c8f5f8
-size 512
+OSX_ARCHITECTURES
+-----------------
+
+Target specific architectures for macOS.
+
+The ``OSX_ARCHITECTURES`` property sets the target binary architecture for
+targets on macOS (``-arch``).  This property is initialized by the value of the
+variable :variable:`CMAKE_OSX_ARCHITECTURES` if it is set when a target is
+created.  Use :prop_tgt:`OSX_ARCHITECTURES_<CONFIG>` to set the binary
+architectures on a per-configuration basis, where ``<CONFIG>`` is an
+upper-case name (e.g. ``OSX_ARCHITECTURES_DEBUG``).

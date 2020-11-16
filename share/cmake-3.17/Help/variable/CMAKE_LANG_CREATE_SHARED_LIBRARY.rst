@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fb0c9d2b1f9f463c33b3b07e8761e7fe0efc6395c03d24c1378470c7b10415ed
-size 317
+CMAKE_<LANG>_CREATE_SHARED_LIBRARY
+----------------------------------
+
+Rule variable to create a shared library.
+
+This is a rule variable that tells CMake how to create a shared
+library for the language ``<LANG>``.  This rule variable is a ``;`` delimited
+list of commands to run to perform the linking step.

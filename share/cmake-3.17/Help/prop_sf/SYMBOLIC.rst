@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eff84ef2a7cccf492bf6691430df07c69ec5c555c663a5072543ca554a4ce3b6
-size 246
+SYMBOLIC
+--------
+
+Is this just a name for a rule.
+
+If ``SYMBOLIC`` (boolean) is set to ``True`` the build system will be informed
+that the source file is not actually created on disk but instead used
+as a symbolic name for a build rule.

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5b5288cfffcc82918f2965e53419a688537c17c98e6829c0aee334544ea486e6
-size 313
+#ifndef __CUDACC__
+#  error "A C or C++ compiler has been selected for CUDA"
+#endif
+
+#include "CMakeCompilerABI.h"
+
+int main(int argc, char* argv[])
+{
+  int require = 0;
+  require += info_sizeof_dptr[argc];
+#if defined(ABI_ID)
+  require += info_abi[argc];
+#endif
+  (void)argv;
+  return require;
+}

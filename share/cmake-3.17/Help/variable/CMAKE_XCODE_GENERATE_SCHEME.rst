@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b5876c1d69e2e75478301b1dc892e800a81bfaa8671e7f0caf5dc2603704f0ff
-size 341
+CMAKE_XCODE_GENERATE_SCHEME
+---------------------------
+
+If enabled, the :generator:`Xcode` generator will generate schema files.  These
+are useful to invoke analyze, archive, build-for-testing and test
+actions from the command line.
+
+This variable initializes the
+:prop_tgt:`XCODE_GENERATE_SCHEME`
+target property on all targets.

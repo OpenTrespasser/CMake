@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d1cc13843ea829c3245615744022992212cee351ea04c522c5e87422d0c02562
-size 184
+#if defined(__GNUC__) && !defined(__INTEL_COMPILER)
+void THIS_IS_GNU();
+#endif
+#ifdef __MINGW32__
+void THIS_IS_MINGW();
+#endif
+#ifdef __CYGWIN__
+void THIS_IS_CYGWIN();
+#endif

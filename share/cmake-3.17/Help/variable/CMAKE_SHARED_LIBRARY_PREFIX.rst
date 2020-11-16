@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e4026493c713bb88e79f3f5288dc3d782b354f1513ab1e37b94522f1fe3d498b
-size 265
+CMAKE_SHARED_LIBRARY_PREFIX
+---------------------------
+
+The prefix for shared libraries that you link to.
+
+The prefix to use for the name of a shared library, ``lib`` on UNIX.
+
+``CMAKE_SHARED_LIBRARY_PREFIX_<LANG>`` overrides this for language ``<LANG>``.

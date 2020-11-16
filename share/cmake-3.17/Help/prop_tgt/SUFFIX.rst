@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cacb5f1418505c15a7c5fb635862393f7ed3dc0a66dd2fa7d3cd05b1cf06f492
-size 192
+SUFFIX
+------
+
+What comes after the target name.
+
+A target property that can be set to override the suffix (such as
+``.so`` or ``.exe``) on the name of a library, module or executable.

@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e46052be2c64faf4678360cf363903bcccd6883e0e8d5b33937636b3b79d909e
-size 300
+subdir_depends
+--------------
+
+Disallowed since version 3.0.  See CMake Policy :policy:`CMP0029`.
+
+Does nothing.
+
+::
+
+  subdir_depends(subdir dep1 dep2 ...)
+
+Does not do anything.  This command used to help projects order
+parallel builds correctly.  This functionality is now automatic.

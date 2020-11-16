@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fb3ae0558ebb02e00ca21b06262413d5402095c91acec6fc2e22e9343381efb1
-size 348
+GHS_INTEGRITY_APP
+-----------------
+
+``ON`` / ``OFF`` boolean to determine if an executable target should
+be treated as an `Integrity Application`.
+
+If no value is set and if a ``.int`` file is added as a source file to the
+executable target it will be treated as an `Integrity Application`.
+
+Supported on :generator:`Green Hills MULTI`.

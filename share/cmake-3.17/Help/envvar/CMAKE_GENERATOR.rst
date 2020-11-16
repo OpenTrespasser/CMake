@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:016c674cf80c1b4e60c272c9e6a41e01da7271e889a520a9e56041b1c47bfe61
-size 549
+CMAKE_GENERATOR
+---------------
+
+.. include:: ENV_VAR.txt
+
+Specifies the CMake default generator to use when no generator is supplied
+with ``-G``. If the provided value doesn't name a generator known by CMake,
+the internal default is used.  Either way the resulting generator selection
+is stored in the :variable:`CMAKE_GENERATOR` variable.
+
+Some generators may be additionally configured using the environment
+variables:
+
+* :envvar:`CMAKE_GENERATOR_PLATFORM`
+* :envvar:`CMAKE_GENERATOR_TOOLSET`
+* :envvar:`CMAKE_GENERATOR_INSTANCE`

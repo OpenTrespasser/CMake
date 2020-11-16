@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:dcefeb0ad2500bdc2ab73ca8ff9547f2b1c08d9d97d5547881fc9d0014467ca2
-size 225
+CMAKE_DEFAULT_BUILD_TYPE
+------------------------
+
+Specifies the configuration to use by default in a ``build.ninja`` file in the
+:generator:`Ninja Multi-Config` generator. See the generator's documentation
+for more details.

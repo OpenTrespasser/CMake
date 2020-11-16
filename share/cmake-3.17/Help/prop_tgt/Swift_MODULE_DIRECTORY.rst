@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:96d7da51f8352fb8065c344dec0a60b466f01c38d966ff196bcb8dc06e0cc59f
-size 500
+Swift_MODULE_DIRECTORY
+----------------------
+
+Specify output directory for Swift modules provided by the target.
+
+If the target contains Swift source files, this specifies the directory in which
+the modules will be placed.  When this property is not set, the modules will be
+placed in the build directory corresponding to the target's source directory.
+If the variable :variable:`CMAKE_Swift_MODULE_DIRECTORY` is set when a target is
+created its value is used to initialise this property.

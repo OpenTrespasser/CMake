@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c98b1e7637bb21bf4e45e06a71e6e331838bc7eb90ff10df1531c682a05683ac
-size 233
+CMAKE_GENERATOR_INSTANCE
+------------------------
+
+.. include:: ENV_VAR.txt
+
+Default value for :variable:`CMAKE_GENERATOR_INSTANCE` if no Cache entry is
+present. This value is only applied if :envvar:`CMAKE_GENERATOR` is set.

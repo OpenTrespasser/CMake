@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c11fbc18f4a7a0e0b55225a5c70f0c57b8f55089860519170625b75f800c39a6
-size 304
+remove_definitions
+------------------
+
+Remove -D define flags added by :command:`add_definitions`.
+
+.. code-block:: cmake
+
+  remove_definitions(-DFOO -DBAR ...)
+
+Removes flags (added by :command:`add_definitions`) from the compiler
+command line for sources in the current directory and below.

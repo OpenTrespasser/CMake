@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6157f170b18f024d7d13064b6b49b26527d3f4ca5cb0c8437c4b5061908870e0
-size 377
+LISTFILE_STACK
+--------------
+
+The current stack of listfiles being processed.
+
+This property is mainly useful when trying to debug errors in your
+CMake scripts.  It returns a list of what list files are currently
+being processed, in order.  So if one listfile does an
+:command:`include` command then that is effectively pushing the
+included listfile onto the stack.

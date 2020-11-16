@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1b9c0702196906dd7ae290bfc3e9b7fa5608d5a84e4dde0e18f86de4668cf6c1
-size 382
+CMAKE_INSTALL_DEFAULT_COMPONENT_NAME
+------------------------------------
+
+Default component used in :command:`install` commands.
+
+If an :command:`install` command is used without the ``COMPONENT`` argument,
+these files will be grouped into a default component.  The name of this
+default install component will be taken from this variable.  It
+defaults to ``Unspecified``.

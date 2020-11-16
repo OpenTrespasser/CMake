@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:73b97c026515e2a7160b3fee62fce0630596be8eb9874b3a0c1fd64d78897dc2
-size 305
+INTERPROCEDURAL_OPTIMIZATION_<CONFIG>
+-------------------------------------
+
+Per-configuration interprocedural optimization for a directory.
+
+This is a per-configuration version of ``INTERPROCEDURAL_OPTIMIZATION``.
+If set, this property overrides the generic property for the named
+configuration.

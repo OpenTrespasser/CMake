@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3ec1bbe45437ee4dee2a6cc40644eedacee42b0be4df567568a3ac7fd5415758
-size 284
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+
+__BlueGeneQ_setup_dynamic(XL CXX)
+
+# -qhalt=s       = Halt on severe error messages
+string(APPEND CMAKE_CXX_FLAGS_INIT " -qhalt=s")

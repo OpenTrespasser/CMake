@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1de934988506c5fd6f45ca371e250da9dc63fd1e5bec6fc4fa29a683b4f0e5df
-size 278
+CMAKE_SHARED_LIBRARY_SUFFIX
+---------------------------
+
+The suffix for shared libraries that you link to.
+
+The suffix to use for the end of a shared library filename, ``.dll`` on
+Windows.
+
+``CMAKE_SHARED_LIBRARY_SUFFIX_<LANG>`` overrides this for language ``<LANG>``.

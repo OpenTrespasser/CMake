@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e7d37da4b72d194bbdbe168a642907ee74e4eb9f37adc30c48324cff8bf6213b
-size 390
+CMAKE_CXX_EXTENSIONS
+--------------------
+
+Default value for :prop_tgt:`CXX_EXTENSIONS` property of targets.
+
+This variable is used to initialize the :prop_tgt:`CXX_EXTENSIONS`
+property on all targets.  See that target property for additional
+information.
+
+See the :manual:`cmake-compile-features(7)` manual for information on
+compile features and a list of supported compilers.

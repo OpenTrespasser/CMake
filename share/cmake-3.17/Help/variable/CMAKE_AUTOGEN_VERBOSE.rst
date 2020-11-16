@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:efa250bcbecc6f066fb7dc72983305c10cef687ada3bf4ec094b4a6af6934179
-size 558
+CMAKE_AUTOGEN_VERBOSE
+---------------------
+
+Sets the verbosity of :prop_tgt:`AUTOMOC`, :prop_tgt:`AUTOUIC` and
+:prop_tgt:`AUTORCC`.  A positive integer value or a true boolean value
+lets the ``AUTO*`` generators output additional processing information.
+
+Setting :variable:`CMAKE_AUTOGEN_VERBOSE` has the same effect
+as setting the ``VERBOSE`` environment variable during
+generation (e.g. by calling ``make VERBOSE=1``).
+The extra verbosity is limited to the ``AUTO*`` generators though.
+
+By default :variable:`CMAKE_AUTOGEN_VERBOSE` is unset.

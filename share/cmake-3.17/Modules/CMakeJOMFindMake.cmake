@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e2f8cde321a87f1d73836750e580a6060adc835b0adbf7e4394a0f7af055f7ca
-size 277
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+
+set (CMAKE_MAKE_PROGRAM "jom" CACHE STRING
+     "Program used to build from makefiles.")
+mark_as_advanced(CMAKE_MAKE_PROGRAM)

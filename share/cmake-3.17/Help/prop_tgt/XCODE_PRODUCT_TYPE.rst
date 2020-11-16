@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:128c7c23bc3b3d5935bb6efbacad8243ead809a723bc8aa615ea10062f3dfb61
-size 259
+XCODE_PRODUCT_TYPE
+------------------
+
+Set the Xcode ``productType`` attribute on its reference to a
+target.  CMake computes a default based on target type but
+can be told explicitly with this property.
+
+See also :prop_tgt:`XCODE_EXPLICIT_FILE_TYPE`.

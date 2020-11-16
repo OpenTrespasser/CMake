@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:61ca2ae89e216f0a54ce031c068b7963807c6626c44f456ee1f8e099988ac5b2
-size 507
+SKIP_REGULAR_EXPRESSION
+-----------------------
+
+If the output matches this regular expression the test will be marked as skipped.
+
+If set, if the output matches one of specified regular expressions,
+the test will be marked as skipped.  Example:
+
+.. code-block:: cmake
+
+  set_property(TEST mytest PROPERTY
+    SKIP_REGULAR_EXPRESSION "[^a-z]Skip" "SKIP" "Skipped"
+  )
+
+``SKIP_REGULAR_EXPRESSION`` expects a list of regular expressions.
+
+See also the :prop_test:`SKIP_RETURN_CODE` property.

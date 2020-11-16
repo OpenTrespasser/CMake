@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3f0bb4cdded12f9958e160ffeabddd509e3a6e9858c7773e27efdde7a7a0a0f3
-size 411
+INSTALL_RPATH
+-------------
+
+The rpath to use for installed targets.
+
+A semicolon-separated list specifying the rpath to use in installed
+targets (for platforms that support it).  This property is initialized
+by the value of the variable :variable:`CMAKE_INSTALL_RPATH` if it is set when
+a target is created.
+
+This property supports
+:manual:`generator expressions <cmake-generator-expressions(7)>`.

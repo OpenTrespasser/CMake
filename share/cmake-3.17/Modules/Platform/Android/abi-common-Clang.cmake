@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:23767fe0ff9d558e2b21b588b0124aabf095407afdac094e29c4c0eee5effca8
-size 168
+string(APPEND _ANDROID_ABI_INIT_CFLAGS
+  #" -Wno-invalid-command-line-argument"
+  #" -Wno-unused-command-line-argument"
+  )
+
+include(Platform/Android/abi-common)

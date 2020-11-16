@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b076cf95a17addba93b1f19576095c65d47c26d4b93d072b817bbec66692ef9b
-size 256
+ADVANCED
+--------
+
+True if entry should be hidden by default in GUIs.
+
+This is a boolean value indicating whether the entry is considered
+interesting only for advanced configuration.  The :command:`mark_as_advanced`
+command modifies this property.

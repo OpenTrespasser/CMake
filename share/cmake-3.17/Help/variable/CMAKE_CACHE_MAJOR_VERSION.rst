@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bd2b96beadd1361f4c1923e50b7f4b7f8b42c7d2a24adc84454066affda8d726
-size 300
+CMAKE_CACHE_MAJOR_VERSION
+-------------------------
+
+Major version of CMake used to create the ``CMakeCache.txt`` file
+
+This stores the major version of CMake used to write a CMake cache
+file.  It is only different when a different version of CMake is run
+on a previously created cache file.

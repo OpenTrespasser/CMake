@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8af59906ddfe4dd5b766d12232a3197c1ba95ffd9609237b6a12a9df0caa7f73
-size 266
+CMAKE_WIN32_EXECUTABLE
+----------------------
+
+Default value for :prop_tgt:`WIN32_EXECUTABLE` of targets.
+
+This variable is used to initialize the :prop_tgt:`WIN32_EXECUTABLE` property
+on all the targets.  See that target property for additional information.

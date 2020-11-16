@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4d01a27a39fa0667f00fe92671e1eeb07c7995e2608dba4d0d6b9418cd971d10
-size 323
+GENERATOR_FILE_NAME
+-------------------
+
+Generator's file for this target.
+
+An internal property used by some generators to record the name of the
+project or dsp file associated with this target.  Note that at
+configure time, this property is only set for targets created by
+:command:`include_external_msproject`.

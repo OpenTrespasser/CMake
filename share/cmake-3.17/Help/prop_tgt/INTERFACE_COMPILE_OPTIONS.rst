@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fedba0242bbbc4032b149e76d9f72158f1e691694de92ca080b364d240d7a1ce
-size 420
+INTERFACE_COMPILE_OPTIONS
+-------------------------
+
+.. |property_name| replace:: compile options
+.. |command_name| replace:: :command:`target_compile_options`
+.. |PROPERTY_INTERFACE_NAME| replace:: ``INTERFACE_COMPILE_OPTIONS``
+.. |PROPERTY_LINK| replace:: :prop_tgt:`COMPILE_OPTIONS`
+.. |PROPERTY_GENEX| replace:: ``$<TARGET_PROPERTY:foo,INTERFACE_COMPILE_OPTIONS>``
+.. include:: INTERFACE_BUILD_PROPERTY.txt

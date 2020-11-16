@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5f95390a1826eb890d76ddccd66ae811f6aaa7bde56288be1e1da9140e4001e7
-size 376
+CMAKE_RUNTIME_OUTPUT_DIRECTORY_<CONFIG>
+---------------------------------------
+
+Where to put all the :ref:`RUNTIME <Runtime Output Artifacts>`
+target files when built for a specific configuration.
+
+This variable is used to initialize the
+:prop_tgt:`RUNTIME_OUTPUT_DIRECTORY_<CONFIG>` property on all the targets.
+See that target property for additional information.

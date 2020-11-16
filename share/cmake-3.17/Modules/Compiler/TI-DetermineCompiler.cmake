@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aef911a56b7f6e78957c83274a358db2506c1b07eaa8dfa06d75b30517cd0473
-size 419
+
+set(_compiler_id_pp_test "defined(__TI_COMPILER_VERSION__)")
+
+set(_compiler_id_version_compute "
+  /* __TI_COMPILER_VERSION__ = VVVRRRPPP */
+# define @PREFIX@COMPILER_VERSION_MAJOR @MACRO_DEC@(__TI_COMPILER_VERSION__/1000000)
+# define @PREFIX@COMPILER_VERSION_MINOR @MACRO_DEC@(__TI_COMPILER_VERSION__/1000   % 1000)
+# define @PREFIX@COMPILER_VERSION_PATCH @MACRO_DEC@(__TI_COMPILER_VERSION__        % 1000)")

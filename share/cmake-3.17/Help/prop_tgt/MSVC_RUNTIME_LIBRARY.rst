@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:94d98a1f620cdcb7be8b2fda2ce4dd4595c70122e77297e954566ad07b5fc349
-size 1039
+MSVC_RUNTIME_LIBRARY
+--------------------
+
+Select the MSVC runtime library for use by compilers targeting the MSVC ABI.
+
+The allowed values are:
+
+.. include:: MSVC_RUNTIME_LIBRARY-VALUES.txt
+
+Use :manual:`generator expressions <cmake-generator-expressions(7)>` to
+support per-configuration specification.  For example, the code:
+
+.. code-block:: cmake
+
+  add_executable(foo foo.c)
+  set_property(TARGET foo PROPERTY
+    MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+
+selects for the target ``foo`` a multi-threaded statically-linked runtime
+library with or without debug information depending on the configuration.
+
+If this property is not set then CMake uses the default value
+``MultiThreaded$<$<CONFIG:Debug>:Debug>DLL`` to select a MSVC runtime library.
+
+.. note::
+
+  This property has effect only when policy :policy:`CMP0091` is set to ``NEW``
+  prior to the first :command:`project` or :command:`enable_language` command
+  that enables a language using a compiler targeting the MSVC ABI.

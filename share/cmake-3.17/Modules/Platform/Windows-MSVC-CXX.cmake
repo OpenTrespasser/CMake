@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:05a0c1cd499c2088cd6947dc9cf78d30ddbaf8b9f028a6ef7858f689ee9858bc
-size 174
+include(Platform/Windows-MSVC)
+set(_COMPILE_CXX " /TP")
+if(NOT CMAKE_CXX_COMPILER_VERSION VERSION_LESS 18.0)
+  set(_FS_CXX " /FS")
+endif()
+__windows_compiler_msvc(CXX)

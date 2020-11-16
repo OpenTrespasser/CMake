@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cecaf532927f195ae8ae6cdab0fcb0e6c68b7e6df1a839d060b01df8771b01ac
-size 275
+# <ndk>/android-ndk-r11c/sources/cxx-stl/system/Android.mk
+set(_ANDROID_STL_RTTI 0)
+set(_ANDROID_STL_EXCEPTIONS 0)
+set(_ANDROID_STL_NOSTDLIBXX 0)
+macro(__android_stl lang)
+  __android_stl_inc(${lang} "${CMAKE_ANDROID_NDK}/sources/cxx-stl/system/include" 1)
+endmacro()

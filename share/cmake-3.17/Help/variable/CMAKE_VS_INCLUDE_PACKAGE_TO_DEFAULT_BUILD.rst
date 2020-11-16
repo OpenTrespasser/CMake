@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:76861f7dabbca14d9d61582998e2967a8af963e4163832fd4a19e254a626d4ca
-size 329
+CMAKE_VS_INCLUDE_PACKAGE_TO_DEFAULT_BUILD
+-----------------------------------------
+
+Include ``PACKAGE`` target to default build.
+
+In Visual Studio solution, by default the ``PACKAGE`` target will not be part
+of the default build. Setting this variable will enable the ``PACKAGE`` target
+to be part of the default build.

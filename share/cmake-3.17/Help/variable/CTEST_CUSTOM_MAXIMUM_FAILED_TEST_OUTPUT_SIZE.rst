@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a8d47fb69c836f6f104bc4920864a3b4e81050ecbe2dd081686764a431c101f0
-size 298
+CTEST_CUSTOM_MAXIMUM_FAILED_TEST_OUTPUT_SIZE
+--------------------------------------------
+
+When saving a failing test's output, this is the maximum size, in bytes, that
+will be collected by the :command:`ctest_test` command. Defaults to 307200
+(300 KiB).
+
+.. include:: CTEST_CUSTOM_XXX.txt

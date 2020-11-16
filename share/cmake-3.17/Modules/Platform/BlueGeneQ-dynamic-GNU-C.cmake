@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fc9522d1892afe1baff519099ff8490e70c99b7bad08a14d23dc057ca5e3237e
-size 182
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+
+__BlueGeneQ_setup_dynamic(GNU C)

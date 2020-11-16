@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f118fb93e8eb532eb924d5cb1c8792b5294f94e8daa72842b03452cebc867126
-size 352
+ANDROID_ANT_ADDITIONAL_OPTIONS
+------------------------------
+
+Set the additional options for Android Ant build system. This is
+a string value containing all command line options for the Ant build.
+This property is initialized by the value of the
+:variable:`CMAKE_ANDROID_ANT_ADDITIONAL_OPTIONS` variable if it is
+set when a target is created.

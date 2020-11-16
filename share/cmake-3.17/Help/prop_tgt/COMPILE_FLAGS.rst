@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b97cc7dce182f50f9ca0b123dc2bc9b7d3214635ddb853d19833ee7680a76360
-size 422
+COMPILE_FLAGS
+-------------
+
+Additional flags to use when compiling this target's sources.
+
+The ``COMPILE_FLAGS`` property sets additional compiler flags used to
+build sources within the target.  Use :prop_tgt:`COMPILE_DEFINITIONS`
+to pass additional preprocessor definitions.
+
+This property is deprecated.  Use the :prop_tgt:`COMPILE_OPTIONS`
+property or the :command:`target_compile_options` command instead.

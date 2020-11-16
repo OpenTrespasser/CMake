@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9cedda2695e23d4c1e5fa017bf808cf179b5520ead5d7d6d8265047272921c83
-size 260
+CMAKE_<LANG>_SIZEOF_DATA_PTR
+----------------------------
+
+Size of pointer-to-data types for language ``<LANG>``.
+
+This holds the size (in bytes) of pointer-to-data types in the target
+platform ABI.  It is defined for languages ``C`` and ``CXX`` (C++).

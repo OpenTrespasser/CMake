@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d90c0547ad35e48990d02edefa1c958f662ad7188341b6c358f8ebbbb5ac8fb1
-size 478
+CMAKE_STATIC_LINKER_FLAGS_<CONFIG>
+----------------------------------
+
+Flags to be used to create static libraries.  These flags will be passed
+to the archiver when creating a static library in the ``<CONFIG>``
+configuration.
+
+See also :variable:`CMAKE_STATIC_LINKER_FLAGS`.
+
+.. note::
+  Static libraries do not actually link.  They are essentially archives
+  of object files.  The use of the name "linker" in the name of this
+  variable is kept for compatibility.

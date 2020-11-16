@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:51d1478118c3b9c7f0fd51ca4a2122c6f09834fe404701555c603d2418d8310e
-size 802
+Eclipse CDT4
+------------
+
+Generates Eclipse CDT 4.0 project files.
+
+Project files for Eclipse will be created in the top directory.  In
+out of source builds, a linked resource to the top level source
+directory will be created.  Additionally a hierarchy of makefiles is
+generated into the build tree.  The appropriate make program can build
+the project through the default ``all`` target.  An ``install`` target
+is also provided.
+
+This "extra" generator may be specified as:
+
+``Eclipse CDT4 - MinGW Makefiles``
+ Generate with :generator:`MinGW Makefiles`.
+
+``Eclipse CDT4 - NMake Makefiles``
+ Generate with :generator:`NMake Makefiles`.
+
+``Eclipse CDT4 - Ninja``
+ Generate with :generator:`Ninja`.
+
+``Eclipse CDT4 - Unix Makefiles``
+ Generate with :generator:`Unix Makefiles`.

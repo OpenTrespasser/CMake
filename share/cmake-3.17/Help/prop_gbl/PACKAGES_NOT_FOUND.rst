@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2f6a1652643fa89036e1f81226b4f571072326119659897d888d6833028549d8
-size 249
+PACKAGES_NOT_FOUND
+------------------
+
+List of packages which were not found during the CMake run.
+
+List of packages which were not found during the CMake run.  Whether a
+package has been found is determined using the <NAME>_FOUND variables.

@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4f250873b3ca223c053ac554dbec84e4705bb74b6705eae737b20c5b948631d4
-size 422
+CMAKE_EXTRA_GENERATOR
+---------------------
+
+The extra generator used to build the project.  See
+:manual:`cmake-generators(7)`.
+
+When using the Eclipse, CodeBlocks, CodeLite, Kate or Sublime generators, CMake
+generates Makefiles (:variable:`CMAKE_GENERATOR`) and additionally project
+files for the respective IDE.  This IDE project file generator is stored in
+``CMAKE_EXTRA_GENERATOR`` (e.g.  ``Eclipse CDT4``).

@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:05d53bda926eb1ff05f77ee524c78807082daae6d701a6c6ba6ef3bbcdfc991f
-size 273
+CMAKE_CTEST_ARGUMENTS
+---------------------
+
+Set this to a :ref:`semicolon-separated list <CMake Language Lists>` of
+command-line arguments to pass to :manual:`ctest(1)` when running tests
+through the ``test`` (or ``RUN_TESTS``) target of the generated build system.

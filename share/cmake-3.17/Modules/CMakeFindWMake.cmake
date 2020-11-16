@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:43610a90d921671ca19fa4ff1ad0825db05ef9169acf0f5091496ac96df75e90
-size 279
+# Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
+# file Copyright.txt or https://cmake.org/licensing for details.
+
+
+set (CMAKE_MAKE_PROGRAM "wmake" CACHE STRING
+     "Program used to build from makefiles.")
+mark_as_advanced(CMAKE_MAKE_PROGRAM)

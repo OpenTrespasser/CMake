@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3d9bf57515ecebd19b04f4f8a525fd14f830e73fdd8f2ee3561f7b5b493bfac5
-size 350
+include(Compiler/Intel)
+__compiler_intel(ASM)
+
+string(APPEND CMAKE_ASM_FLAGS_MINSIZEREL_INIT " -DNDEBUG")
+string(APPEND CMAKE_ASM_FLAGS_RELEASE_INIT " -DNDEBUG")
+string(APPEND CMAKE_ASM_FLAGS_RELWITHDEBINFO_INIT " -DNDEBUG")
+
+if(UNIX)
+  set(CMAKE_ASM_SOURCE_FILE_EXTENSIONS s;S)
+else()
+  set(CMAKE_ASM_SOURCE_FILE_EXTENSIONS asm)
+endif()

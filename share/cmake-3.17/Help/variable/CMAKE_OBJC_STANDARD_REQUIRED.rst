@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ac65b85972dfe8ca5a5ea17582018000444614186950ce4ac15cd7b1dd1da8bb
-size 422
+CMAKE_OBJC_STANDARD_REQUIRED
+----------------------------
+
+Default value for :prop_tgt:`OBJC_STANDARD_REQUIRED` property of targets.
+
+This variable is used to initialize the :prop_tgt:`OBJC_STANDARD_REQUIRED`
+property on all targets.  See that target property for additional
+information.
+
+See the :manual:`cmake-compile-features(7)` manual for information on
+compile features and a list of supported compilers.

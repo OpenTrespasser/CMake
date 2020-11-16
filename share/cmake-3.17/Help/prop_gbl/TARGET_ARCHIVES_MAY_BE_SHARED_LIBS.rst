@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e5332ffba05fc3192e24a9f358a7772dfbf24a9613c3b3d5a9232f25bc8df59e
-size 232
+TARGET_ARCHIVES_MAY_BE_SHARED_LIBS
+----------------------------------
+
+Set if shared libraries may be named like archives.
+
+On AIX shared libraries may be named "lib<name>.a".  This property is
+set to true on such platforms.

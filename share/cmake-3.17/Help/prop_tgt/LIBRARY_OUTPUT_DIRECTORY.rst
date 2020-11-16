@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b472eb50b743c73a12ca404eb00764011c37d9a4973ba98ec811304081dbaf6c
-size 336
+LIBRARY_OUTPUT_DIRECTORY
+------------------------
+
+.. |XXX| replace:: :ref:`LIBRARY <Library Output Artifacts>`
+.. |xxx| replace:: library
+.. |CMAKE_XXX_OUTPUT_DIRECTORY| replace:: CMAKE_LIBRARY_OUTPUT_DIRECTORY
+.. include:: XXX_OUTPUT_DIRECTORY.txt
+
+See also the :prop_tgt:`LIBRARY_OUTPUT_DIRECTORY_<CONFIG>` target property.

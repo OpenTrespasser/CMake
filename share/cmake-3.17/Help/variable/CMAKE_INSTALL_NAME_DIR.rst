@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ffc1f2954669c434b3906939ff6621141000cfd5e28482deaac973fa707ae29c
-size 255
+CMAKE_INSTALL_NAME_DIR
+----------------------
+
+macOS directory name for installed targets.
+
+``CMAKE_INSTALL_NAME_DIR`` is used to initialize the
+:prop_tgt:`INSTALL_NAME_DIR` property on all targets.  See that target
+property for more information.

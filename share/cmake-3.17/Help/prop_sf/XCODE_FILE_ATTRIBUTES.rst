@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:62cd371c0193c1a0ac3cfa220ba2604530dc53e871f298ac74e8f15a414dbf20
-size 335
+XCODE_FILE_ATTRIBUTES
+---------------------
+
+Add values to the :generator:`Xcode` ``ATTRIBUTES`` setting on its reference to a
+source file.  Among other things, this can be used to set the role on
+a ``.mig`` file::
+
+  set_source_files_properties(defs.mig
+      PROPERTIES
+          XCODE_FILE_ATTRIBUTES "Client;Server"
+  )

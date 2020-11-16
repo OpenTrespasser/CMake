@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:938093f285d0bd0501580c69cabdaf5f6dac0bc4030ee7f6514aaa0bb7602ff2
-size 209
+<PROJECT-NAME>_HOMEPAGE_URL
+---------------------------
+
+Value given to the ``HOMEPAGE_URL`` option of the most recent call to the
+:command:`project` command with project name ``<PROJECT-NAME>``, if any.

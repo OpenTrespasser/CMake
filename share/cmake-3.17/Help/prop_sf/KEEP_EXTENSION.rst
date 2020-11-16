@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5eb019be98954c8b0c1f85d2f26e2614c5ac04f497c774ec7355145eed476b4f
-size 360
+KEEP_EXTENSION
+--------------
+
+Make the output file have the same extension as the source file.
+
+If this property is set then the file extension of the output file
+will be the same as that of the source file.  Normally the output file
+extension is computed based on the language of the source file, for
+example ``.cxx`` will go to a ``.o`` extension.

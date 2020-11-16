@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ae9611ab977bfda0aabdc8ae95fff49d86ac587da4a5ee2ded112f4973f319be
-size 216
+CMAKE_ANDROID_NATIVE_LIB_DIRECTORIES
+------------------------------------
+
+Default value for the :prop_tgt:`ANDROID_NATIVE_LIB_DIRECTORIES` target
+property.  See that target property for additional information.

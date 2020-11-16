@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:26febde58088c4da9d4e7ee121daa32fc612cf30155e9917112e23b31584db54
-size 365
+IMPORTED_LINK_DEPENDENT_LIBRARIES_<CONFIG>
+------------------------------------------
+
+<CONFIG>-specific version of :prop_tgt:`IMPORTED_LINK_DEPENDENT_LIBRARIES`.
+
+Configuration names correspond to those provided by the project from
+which the target is imported.  If set, this property completely
+overrides the generic property for the named configuration.

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e11bb07096604956f225515c69c2331e8a59ec95d7435d71171ed2ff1727f535
-size 300
+CMAKE_CACHE_MINOR_VERSION
+-------------------------
+
+Minor version of CMake used to create the ``CMakeCache.txt`` file
+
+This stores the minor version of CMake used to write a CMake cache
+file.  It is only different when a different version of CMake is run
+on a previously created cache file.

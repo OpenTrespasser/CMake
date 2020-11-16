@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1609bd40a7e0c58029e9718e3ae5250516cdc4c0188383123c57b45999a8ac80
-size 455
+INTERPROCEDURAL_OPTIMIZATION_<CONFIG>
+-------------------------------------
+
+Per-configuration interprocedural optimization for a target.
+
+This is a per-configuration version of :prop_tgt:`INTERPROCEDURAL_OPTIMIZATION`.
+If set, this property overrides the generic property for the named
+configuration.
+
+This property is initialized by the
+:variable:`CMAKE_INTERPROCEDURAL_OPTIMIZATION_<CONFIG>` variable if it is set
+when a target is created.

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d54d47097cc4126aa5b5489a7e8a49736d2f688787914b5a38e585877dd2ac74
-size 356
+STRINGS
+-------
+
+Enumerate possible ``STRING`` entry values for GUI selection.
+
+For cache entries with type ``STRING``, this enumerates a set of values.
+CMake GUIs may use this to provide a selection widget instead of a
+generic string entry field.  This is for convenience only.  CMake does
+not enforce that the value matches one of those listed.

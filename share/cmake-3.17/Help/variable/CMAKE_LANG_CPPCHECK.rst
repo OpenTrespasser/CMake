@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:78e27e3dcc743cfe47de89aae3c090abd3578053fd82b2292a7aada96467450b
-size 252
+CMAKE_<LANG>_CPPCHECK
+---------------------
+
+Default value for :prop_tgt:`<LANG>_CPPCHECK` target property. This variable
+is used to initialize the property on each target as it is created.  This
+is done only when ``<LANG>`` is ``C`` or ``CXX``.

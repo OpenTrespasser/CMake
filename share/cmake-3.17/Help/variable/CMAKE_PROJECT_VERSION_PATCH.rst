@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:778d1876bf2948592c7c29af11f39b5e657911bdbd19a3d9071dbd1ea6202b47
-size 390
+CMAKE_PROJECT_VERSION_PATCH
+---------------------------
+
+The patch version of the top level project.
+
+This variable holds the patch version of the project as specified in the top
+level CMakeLists.txt file by a :command:`project` command. Please see
+:variable:`CMAKE_PROJECT_VERSION` documentation for the behavior when
+multiple :command:`project` commands are used in the sources.

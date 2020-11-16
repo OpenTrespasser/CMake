@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:804811b27ee20cb50697abea03552102cc314a87dcf97855c006f9cf4b59236e
-size 273
+CMAKE_VS_NsightTegra_VERSION
+----------------------------
+
+When using a Visual Studio generator with the
+:variable:`CMAKE_SYSTEM_NAME` variable set to ``Android``,
+this variable contains the version number of the
+installed NVIDIA Nsight Tegra Visual Studio Edition.

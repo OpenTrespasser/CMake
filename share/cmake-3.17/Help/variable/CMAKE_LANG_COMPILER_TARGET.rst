@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:28ee38016e7505be2a92e9eeb3e5dd354c80eacb0d9086ad596d12842ca07935
-size 408
+CMAKE_<LANG>_COMPILER_TARGET
+----------------------------
+
+The target for cross-compiling, if supported.
+
+Some compiler drivers are inherently cross-compilers, such as clang and
+QNX qcc. These compiler drivers support a command-line argument to specify
+the target to cross-compile for.
+
+This variable may only be set in a toolchain file specified by
+the :variable:`CMAKE_TOOLCHAIN_FILE` variable.

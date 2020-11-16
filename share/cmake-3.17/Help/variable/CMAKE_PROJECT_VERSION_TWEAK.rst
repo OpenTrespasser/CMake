@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:19a4dafd35e1bf8169bcd8e31ac7f4ab7e3e6963ddc0d8252439b75bbe93b5c2
-size 390
+CMAKE_PROJECT_VERSION_TWEAK
+---------------------------
+
+The tweak version of the top level project.
+
+This variable holds the tweak version of the project as specified in the top
+level CMakeLists.txt file by a :command:`project` command. Please see
+:variable:`CMAKE_PROJECT_VERSION` documentation for the behavior when
+multiple :command:`project` commands are used in the sources.

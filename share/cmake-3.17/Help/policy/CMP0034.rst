@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6bbd21caba007ab60244cf83684e6c11c06d9438551b5af034030e8b782c6cb5
-size 405
+CMP0034
+-------
+
+The :command:`utility_source` command should not be called.
+
+This command was introduced in March 2001 to help build executables used to
+generate other files.  This approach has long been replaced by
+:command:`add_executable` combined with :command:`add_custom_command`.
+
+.. |disallowed_version| replace:: 3.0
+.. include:: DISALLOWED_COMMAND.txt
+
+.. include:: DEPRECATED.txt

@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5981556944a078ac2e1c4795436423ed5b59a6be4062b200a97bb36f18ebe320
-size 295
+SKIP_AUTORCC
+------------
+
+Exclude the source file from :prop_tgt:`AUTORCC` processing (for Qt projects).
+
+For broader exclusion control see :prop_sf:`SKIP_AUTOGEN`.
+
+EXAMPLE
+^^^^^^^
+
+.. code-block:: cmake
+
+  # ...
+  set_property(SOURCE file.qrc PROPERTY SKIP_AUTORCC ON)
+  # ...

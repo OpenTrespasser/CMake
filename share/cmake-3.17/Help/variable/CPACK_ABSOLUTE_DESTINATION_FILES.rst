@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c2ea99541cf7ea85ba5f5ec5e558f3a9a4c413222a66b706a3f918a02b5adfab
-size 485
+CPACK_ABSOLUTE_DESTINATION_FILES
+--------------------------------
+
+List of files which have been installed using an ``ABSOLUTE DESTINATION`` path.
+
+This variable is a Read-Only variable which is set internally by CPack
+during installation and before packaging using
+:variable:`CMAKE_ABSOLUTE_DESTINATION_FILES` defined in ``cmake_install.cmake``
+scripts.  The value can be used within CPack project configuration
+file and/or ``CPack<GEN>.cmake`` file of ``<GEN>`` generator.

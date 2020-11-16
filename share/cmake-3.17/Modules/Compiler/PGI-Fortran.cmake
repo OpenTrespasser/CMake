@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6fe9b13fcf48985bc26566ba7459b0ad38a0fa0db28b655ade4712d0c0cfef92
-size 488
+include(Compiler/PGI)
+__compiler_pgi(Fortran)
+
+set(CMAKE_Fortran_SUBMODULE_SEP "-")
+set(CMAKE_Fortran_SUBMODULE_EXT ".mod")
+
+set(CMAKE_Fortran_PREPROCESS_SOURCE
+  "<CMAKE_Fortran_COMPILER> -Mpreprocess <DEFINES> <INCLUDES> <FLAGS> -E <SOURCE> > <PREPROCESSED_SOURCE>")
+
+set(CMAKE_Fortran_FORMAT_FIXED_FLAG "-Mnofreeform")
+set(CMAKE_Fortran_FORMAT_FREE_FLAG "-Mfreeform")
+
+string(APPEND CMAKE_Fortran_FLAGS_DEBUG_INIT " -Mbounds")
+
+set(CMAKE_Fortran_MODDIR_FLAG "-module ")

@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fd3286477d4ae54991908f12ba2e53ef4ec3780ff1370450599b7d2dfe8821d6
-size 372
+ANDROID_ASSETS_DIRECTORIES
+--------------------------
+
+Set the Android assets directories to copy into the main assets
+folder before build. This a string property that contains the
+directory paths separated by semicolon.
+This property is initialized by the value of the
+:variable:`CMAKE_ANDROID_ASSETS_DIRECTORIES` variable if it is set when
+a target is created.

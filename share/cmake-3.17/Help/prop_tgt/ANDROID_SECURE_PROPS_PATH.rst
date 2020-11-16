@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2d480fcef148d8cb617df1517019539823b51212ef9ebb0e6169015ba7eb114a
-size 338
+ANDROID_SECURE_PROPS_PATH
+-------------------------
+
+Set the Android property that states the location of the secure properties file.
+This is a string property that contains the file path.
+This property is initialized by the value of the
+:variable:`CMAKE_ANDROID_SECURE_PROPS_PATH` variable
+if it is set when a target is created.

@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c0442b0ae9a08ddd74ccb1844fd15fc0ef9336bd7bceca82ab63e7d523efb689
-size 284
+CTEST_CUSTOM_MAXIMUM_NUMBER_OF_ERRORS
+-------------------------------------
+
+The maximum number of errors in a single build step which will be detected.
+After this, the :command:`ctest_test` command will truncate the output.
+Defaults to 50.
+
+.. include:: CTEST_CUSTOM_XXX.txt

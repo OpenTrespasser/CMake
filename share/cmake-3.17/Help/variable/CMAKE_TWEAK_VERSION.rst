@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:657dce297ffc61ca1cd323b25a0fa961f1657f4a16dfac095337e21cc6af5c2d
-size 324
+CMAKE_TWEAK_VERSION
+-------------------
+
+Defined to ``0`` for compatibility with code written for older
+CMake versions that may have defined higher values.
+
+.. note::
+
+  In CMake versions 2.8.2 through 2.8.12, this variable holds
+  the fourth version number component of the
+  :variable:`CMAKE_VERSION` variable.

@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8348ed1a59c6d725f62aada569d9cc306bb4a02ccc11624826f87b228f6f89f1
-size 429
+XCODE_SCHEME_MALLOC_STACK
+-------------------------
+
+Whether to enable ``Malloc Stack`` in the Diagnostics
+section of the generated Xcode scheme.
+
+This property is initialized by the value of the variable
+:variable:`CMAKE_XCODE_SCHEME_MALLOC_STACK` if it is set
+when a target is created.
+
+Please refer to the :prop_tgt:`XCODE_GENERATE_SCHEME` target property
+documentation to see all Xcode schema related properties.

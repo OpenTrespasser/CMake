@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:af21a7cbcddf9b16016ec1d57b4bd0ca31004c5ecf903dc19f9cbb51bda0330e
-size 367
+CMAKE_HOME_DIRECTORY
+--------------------
+
+Path to top of source tree. Same as :variable:`CMAKE_SOURCE_DIR`.
+
+This is an internal cache entry used to locate the source directory
+when loading a ``CMakeCache.txt`` from a build tree.  It should not
+be used in project code.  The variable :variable:`CMAKE_SOURCE_DIR`
+has the same value and should be preferred.

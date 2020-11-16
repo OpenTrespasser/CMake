@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cd6e857a982e8402b342579e8471057444844149c62382848c041a1132e2f558
-size 505
+.. cmake-manual-description: CPack Generator Reference
+
+cpack-generators(7)
+*******************
+
+.. only:: html
+
+   .. contents::
+
+Generators
+==========
+
+.. toctree::
+   :maxdepth: 1
+
+   /cpack_gen/archive
+   /cpack_gen/bundle
+   /cpack_gen/cygwin
+   /cpack_gen/deb
+   /cpack_gen/dmg
+   /cpack_gen/external
+   /cpack_gen/freebsd
+   /cpack_gen/ifw
+   /cpack_gen/nsis
+   /cpack_gen/nuget
+   /cpack_gen/packagemaker
+   /cpack_gen/productbuild
+   /cpack_gen/rpm
+   /cpack_gen/wix

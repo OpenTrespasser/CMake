@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a6748d949624efc88f14de479fe82a7346fa73c2d51b8fb52a6d26b254b601e4
-size 192
+CTEST_CHECKOUT_COMMAND
+----------------------
+
+Tell the :command:`ctest_start` command how to checkout or initialize
+the source directory in a :manual:`ctest(1)` dashboard client script.

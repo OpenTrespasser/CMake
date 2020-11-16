@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:59897632e6ba1e9151df8425d97d575c20cb4d60dc36ecfc595af49cbc8b7d16
-size 412
+VS_DEPLOYMENT_LOCATION
+----------------------
+
+Specifies the deployment location for a content source file with a Windows
+Phone or Windows Store application when built
+with a :manual:`Visual Studio generators <cmake-generators(7)>`.
+This property is only applicable when using :prop_sf:`VS_DEPLOYMENT_CONTENT`.
+The value represent the path relative to the app package and applies to all
+configurations.

@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fac85dab851436df375938cd0c9998a65166bc128f0bd52f5ab1e93d36e443f3
-size 313
+CMAKE_OSX_ARCHITECTURES
+-----------------------
+
+.. include:: ENV_VAR.txt
+
+Target specific architectures for macOS.
+
+The ``CMAKE_OSX_ARCHITECTURES`` environment variable sets the default value for
+the :variable:`CMAKE_OSX_ARCHITECTURES` variable. See
+:prop_tgt:`OSX_ARCHITECTURES` for more information.

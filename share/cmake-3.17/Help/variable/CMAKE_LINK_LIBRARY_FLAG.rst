@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2f8c286cb3184b6df6586708d18f81f990e23ed3ba73edd3e5d69daf9a7d1453
-size 214
+CMAKE_LINK_LIBRARY_FLAG
+-----------------------
+
+Flag to be used to link a library into an executable.
+
+The flag will be used to specify a library to link to an executable.
+On most compilers this is ``-l``.

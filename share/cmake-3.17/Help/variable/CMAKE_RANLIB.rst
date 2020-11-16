@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c8e179fdecca0864e03fca95dfc32170ed886465a12994a2efc18cc2f8c40d56
-size 193
+CMAKE_RANLIB
+------------
+
+Name of randomizing tool for static libraries.
+
+This specifies name of the program that randomizes libraries on UNIX,
+not used on Windows, but may be present.

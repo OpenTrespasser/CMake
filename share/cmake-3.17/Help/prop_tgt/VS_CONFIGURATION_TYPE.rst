@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a8006101aaa6137f9928fff1b5cdb179a2981da4d7eac1e3fdcf446c2a72dda9
-size 482
+VS_CONFIGURATION_TYPE
+---------------------
+
+Visual Studio project configuration type.
+
+Sets the ``ConfigurationType`` attribute for a generated Visual Studio project.
+The property value may use
+:manual:`generator expressions <cmake-generator-expressions(7)>`.
+If this property is set, it overrides the default setting that is based on the
+target type (e.g. ``StaticLibrary``, ``Application``, ...).
+
+Supported on :ref:`Visual Studio Generators` for VS 2010 and higher.

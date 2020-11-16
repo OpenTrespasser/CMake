@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9cc3a3a634989efe0f2c68dd8d31dd3763c6551729033b906335e92807dbdf8c
-size 213
+ATTACHED_FILES
+--------------
+
+Attach a list of files to a dashboard submission.
+
+Set this property to a list of files that will be encoded and
+submitted to the dashboard as an addition to the test result.

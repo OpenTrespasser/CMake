@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:117e6e5064688f6a2df590b0f1ed806b8c5f8e941b36000e77c507d285eba84d
-size 417
+CMAKE_SYSTEM_PROGRAM_PATH
+-------------------------
+
+:ref:`Semicolon-separated list <CMake Language Lists>` of directories specifying a search path
+for the :command:`find_program` command.  By default this contains the
+standard directories for the current system.  It is *not* intended to be
+modified by the project; use :variable:`CMAKE_PROGRAM_PATH` for this.
+See also :variable:`CMAKE_SYSTEM_PREFIX_PATH`.

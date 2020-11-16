@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6ebbb9fa67d62dceb2ebb9b26a0c264d313fc9b059faf65f8eccdededde9ad5b
-size 400
+CMAKE_ECLIPSE_GENERATE_LINKED_RESOURCES
+---------------------------------------
+
+This cache variable is used by the Eclipse project generator.  See
+:manual:`cmake-generators(7)`.
+
+The Eclipse project generator generates so-called linked resources
+e.g. to the subproject root dirs in the source tree or to the source files
+of targets.
+This can be disabled by setting this variable to FALSE.

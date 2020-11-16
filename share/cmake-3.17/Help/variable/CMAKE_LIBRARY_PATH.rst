@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:db5ceb4451158ce701df07fa9da3bc946beae99916adf8fecff7741147b3e2df
-size 331
+CMAKE_LIBRARY_PATH
+------------------
+
+:ref:`Semicolon-separated list <CMake Language Lists>` of directories specifying a search path
+for the :command:`find_library` command.  By default it is empty, it is
+intended to be set by the project.  See also
+:variable:`CMAKE_SYSTEM_LIBRARY_PATH` and :variable:`CMAKE_PREFIX_PATH`.

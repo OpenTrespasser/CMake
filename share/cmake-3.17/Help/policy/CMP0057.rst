@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:42f512af9c65ae7fa2b7805d55cac066818e1c5b223f3ec0b12f8007b75a7092
-size 511
+CMP0057
+-------
+
+Support new :command:`if` IN_LIST operator.
+
+CMake 3.3 adds support for the new IN_LIST operator.
+
+The ``OLD`` behavior for this policy is to ignore the IN_LIST operator.
+The ``NEW`` behavior is to interpret the IN_LIST operator.
+
+This policy was introduced in CMake version 3.3.
+CMake version |release| warns when the policy is not set and uses
+``OLD`` behavior.  Use the :command:`cmake_policy` command to set
+it to ``OLD`` or ``NEW`` explicitly.
+
+.. include:: DEPRECATED.txt

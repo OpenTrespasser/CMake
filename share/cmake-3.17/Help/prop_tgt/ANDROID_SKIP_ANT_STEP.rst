@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:15358e577754c75cee0ed9e0a73ad15e146f773ae088dcd912ad739f9a29824c
-size 279
+ANDROID_SKIP_ANT_STEP
+---------------------
+
+Set the Android property that defines whether or not to skip the Ant build step.
+This is a boolean property initialized by the value of the
+:variable:`CMAKE_ANDROID_SKIP_ANT_STEP` variable if it is set when a target is created.

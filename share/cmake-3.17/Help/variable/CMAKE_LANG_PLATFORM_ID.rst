@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2352550839dc42304269888dd89b4008757809522f0b2c2a4a8962019a46209a
-size 165
+CMAKE_<LANG>_PLATFORM_ID
+------------------------
+
+An internal variable subject to change.
+
+This is used in determining the platform and is subject to change.

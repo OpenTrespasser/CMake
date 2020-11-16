@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7120e78739efd6b93b56b615cb1efde0223b694b32b7dab9b1d524afee886d60
-size 416
+CMAKE_MACOSX_BUNDLE
+-------------------
+
+Default value for :prop_tgt:`MACOSX_BUNDLE` of targets.
+
+This variable is used to initialize the :prop_tgt:`MACOSX_BUNDLE` property on
+all the targets.  See that target property for additional information.
+
+This variable is set to ``ON`` by default if :variable:`CMAKE_SYSTEM_NAME`
+equals to :ref:`iOS, tvOS or watchOS <Cross Compiling for iOS, tvOS, or watchOS>`.

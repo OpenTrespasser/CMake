@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:82156c28512765eb5625514f159f323edec2105fda7fd1d5fc4451a7177c1879
-size 333
+CMAKE_<LANG>_SIMULATE_ID
+------------------------
+
+Identification string of "simulated" compiler.
+
+Some compilers simulate other compilers to serve as drop-in
+replacements.  When CMake detects such a compiler it sets this
+variable to what would have been the :variable:`CMAKE_<LANG>_COMPILER_ID` for
+the simulated compiler.

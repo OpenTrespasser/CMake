@@ -1,3 +1,4 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:80bf600e95360120158665c6afc231649eb86cbd6da844f41a9820beba4543de
-size 194
+include(Platform/Windows-Intel)
+__windows_compiler_intel(C)
+set(CMAKE_NINJA_DEPTYPE_C intel) # special value handled by CMake
+set(CMAKE_DEPFILE_FLAGS_C "-QMMD -QMT <OBJECT> -QMF <DEPFILE>")

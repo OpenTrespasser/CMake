@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a67711ce0e8dfcacb913d698bf59a5c774a8e325ebd78e897f15177e07759bff
-size 486
+# <ndk>/build/core/toolchains/arm-linux-androideabi-clang/setup.mk
+set(_ANDROID_ABI_CLANG_TARGET "armv5te-none-linux-androideabi")
+
+string(APPEND _ANDROID_ABI_INIT_CFLAGS
+  " -march=armv5te"
+  )
+
+if(CMAKE_ANDROID_ARM_MODE)
+  string(APPEND _ANDROID_ABI_INIT_CFLAGS " -marm")
+else()
+  string(APPEND _ANDROID_ABI_INIT_CFLAGS " -mthumb")
+endif()
+
+string(APPEND _ANDROID_ABI_INIT_CFLAGS
+  " -msoft-float"
+  " -mtune=xscale"
+  )
+
+include(Platform/Android/abi-common-Clang)

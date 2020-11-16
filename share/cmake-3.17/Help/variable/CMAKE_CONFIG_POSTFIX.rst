@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aa7603e877db0272bfa4b518e5fb0d5b249f30f50b9ba93116559b4a2a4162a9
-size 278
+CMAKE_<CONFIG>_POSTFIX
+----------------------
+
+Default filename postfix for libraries under configuration ``<CONFIG>``.
+
+When a non-executable target is created its :prop_tgt:`<CONFIG>_POSTFIX`
+target property is initialized with the value of this variable if it is set.

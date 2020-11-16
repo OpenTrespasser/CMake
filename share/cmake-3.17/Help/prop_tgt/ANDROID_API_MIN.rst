@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5f5d94bb7c53ac17af0f11faf192cc20e57aa26e8270b68752d998e0cba71bb1
-size 318
+ANDROID_API_MIN
+---------------
+
+Set the Android MIN API version (e.g. ``9``).  The version number
+must be a positive decimal integer.  This property is initialized by
+the value of the :variable:`CMAKE_ANDROID_API_MIN` variable if it is set
+when a target is created.  Native code builds using this API version.

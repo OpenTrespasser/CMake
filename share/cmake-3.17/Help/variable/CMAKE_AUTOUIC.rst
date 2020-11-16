@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:19d7b84cef36e25f07a6bef8bf98ada7789bc713116cd145cb31667a3ae58f28
-size 236
+CMAKE_AUTOUIC
+-------------
+
+Whether to handle ``uic`` automatically for Qt targets.
+
+This variable is used to initialize the :prop_tgt:`AUTOUIC` property on all
+the targets.  See that target property for additional information.

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4b0980ab3e980a73107ba621fab46a5e4ac2d7329f40ee49064e38f4abc4d149
-size 231
+IMPORTED_LOCATION_<CONFIG>
+--------------------------
+
+<CONFIG>-specific version of :prop_tgt:`IMPORTED_LOCATION` property.
+
+Configuration names correspond to those provided by the project from
+which the target is imported.

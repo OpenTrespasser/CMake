@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0befac1d2e069f5376de7235b7fae512dc8041d0935ba6adb0ac1d2abfb91ca9
-size 595
+DEPLOYMENT_REMOTE_DIRECTORY
+---------------------------
+
+Set the WinCE project ``RemoteDirectory`` in ``DeploymentTool`` and
+``RemoteExecutable`` in ``DebuggerTool`` in ``.vcproj`` files generated
+by the :generator:`Visual Studio 9 2008` generator.
+This is useful when you want to debug on remote WinCE device.
+For example:
+
+.. code-block:: cmake
+
+  set_property(TARGET ${TARGET} PROPERTY
+    DEPLOYMENT_REMOTE_DIRECTORY "\\FlashStorage")
+
+produces::
+
+  <DeploymentTool RemoteDirectory="\FlashStorage" ... />
+  <DebuggerTool RemoteExecutable="\FlashStorage\target_file" ... />

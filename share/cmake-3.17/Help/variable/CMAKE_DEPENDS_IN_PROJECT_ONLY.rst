@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4b5a6aada9a7535c6021736299b4593854a9aec4f6d2101a2bae59ce1d1f5d93
-size 487
+CMAKE_DEPENDS_IN_PROJECT_ONLY
+-----------------------------
+
+When set to ``TRUE`` in a directory, the build system produced by the
+:ref:`Makefile Generators` is set up to only consider dependencies on source
+files that appear either in the source or in the binary directories.  Changes
+to source files outside of these directories will not cause rebuilds.
+
+This should be used carefully in cases where some source files are picked up
+through external headers during the build.

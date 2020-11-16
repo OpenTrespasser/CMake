@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:91471aa20eeacbdc9e47bceb3134bcd98dbd232ddcea42cd5434a01af9662290
-size 225
+ATTACHED_FILES_ON_FAIL
+----------------------
+
+Attach a list of files to a dashboard submission if the test fails.
+
+Same as :prop_test:`ATTACHED_FILES`, but these files will only be
+included if the test does not pass.

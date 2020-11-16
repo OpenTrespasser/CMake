@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6000238cdaa19394105b508457fa05156c9eae0f368950ae674bfa34d54d1c24
-size 210
+CMAKE_CURRENT_FUNCTION
+----------------------
+
+When executing code inside a :command:`function`, this variable
+contains the name of the current function.  It can be used for
+diagnostic or debug messages.

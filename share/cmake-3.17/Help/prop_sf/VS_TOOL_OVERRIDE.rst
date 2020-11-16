@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e96da95012888a74462564af86c7f8bce0f2f7787515ef6fedfe990b9b93401e
-size 176
+VS_TOOL_OVERRIDE
+----------------
+
+Override the default Visual Studio tool that will be applied to the source file
+with a new tool not based on the extension of the file.

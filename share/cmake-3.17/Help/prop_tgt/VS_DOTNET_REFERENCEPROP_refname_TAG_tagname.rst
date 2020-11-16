@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c478c7616590523de50b6d79e314bd9712b3cb99ae7e089ec1c39f19f40e68aa
-size 563
+VS_DOTNET_REFERENCEPROP_<refname>_TAG_<tagname>
+-----------------------------------------------
+
+Defines an XML property ``<tagname>`` for a .NET reference
+``<refname>``.
+
+Reference properties can be set for .NET references which are
+defined by the target properties :prop_tgt:`VS_DOTNET_REFERENCES`,
+:prop_tgt:`VS_DOTNET_REFERENCE_<refname>`
+and also for project references to other C# targets which are
+established by :command:`target_link_libraries()`.
+
+This property is only applicable to C# targets and Visual Studio
+generators 2010 and later.
